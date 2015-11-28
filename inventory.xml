@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8">
+<furnitures>
+    <furniture>
+        <name></name>
+        <type></type>
+        <color></color>
+        <height></height>
+        <width></width>
+        <price></price>
+    </furniture>
+    
+    <furniture>
+        <name></name>
+        <type></type>
+        <color></color>
+        <height></height>
+        <width></width>
+        <price></price>
+    </furniture>
+    
+    <furniture>
+        <name></name>
+        <type></type>
+        <color></color>
+        <height></height>
+        <width></width>
+        <price></price>
+    </furniture>
+    
+    <furniture>
+        <name></name>
+        <type></type>
+        <color></color>
+        <height></height>
+        <width></width>
+        <price></price>
+    </furniture>
+</furnitures>

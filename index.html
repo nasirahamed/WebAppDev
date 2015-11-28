@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Countries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $.getJSON('/get/json', function(result){
+          var tr;
+          $.each(result, function(i, field){
+            tr = $('<tr/>'); //creating new Table Row
+            tr.attr('class', field.Region);//Grab region and put it in a class
+            tr.append('<td>' + field.Country_code + '</td');
+            tr.append('<td>' + field.Name + '</td');
+            tr.append('<td>' + field.Capital + '</td');
+            tr.append('<td>' + field.Phone_code + '</td');
+            $('table').append(tr);
+          });
+         $('#hide').click(function(){
+           $('tr').has('td').not('.EU').animate({'opacity': '0.35'}, 'slow');
+         });
+         
+         $('#show').click(function(){
+           $('tr').animate({'opacity': '1'}, 'slow');
+         });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container" ng-controller="ChatController">
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="pull-right">
+            <a href="https://c9.io" class="brand">Cloud9 IDE</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Chat Example</h1>
+      </div>
+      <div class="row">
+        <div class="span3">
+          <ul class="nav nav-list well">
+            <li class="nav-header">
+              <button id="hide">Hide</button> <br />
+              <button id="show">Show</button>
+            </li>
+            
+            </li>
+          </ul>
+        </div>
+        <div class="span9">
+          
+          <div class="span9">
+            <table>
+              <tr></tr>
+              <th>Country code</th>
+              <th>Name</th>
+              <th>Capital</th>
+              <th>Phne code</th>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
