@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<furnitures>
+    
+    
+    <furniture>
+        <id>1005</id>
+        <name>Top Ultra</name>
+        <type>Office Desk</type>
+        <color>Wooden Black</color>
+        <price>120</price>
+    </furniture>
+<furniture><id>1005</id><name>Kinder</name><type>Sofa</type><color>Tarquise</color><price>450</price></furniture><furniture><id>1056</id><name>Table</name><type>Sofa</type><color>Tarquise</color><price>70</price></furniture><furniture><id>1086</id><name>Table</name><type>Apple Desktop Table</type><color>Tarquise</color><price>300</price></furniture><furniture><id>1011</id><name>BookCage</name><type>Indian Book Cage</type><color>Brown</color><price>130</price></furniture><furniture><id>1011</id><name>BookCage</name><type>Indian Book Cage</type><color>Brown</color><price>130</price></furniture><furniture><id>1045</id><name>ComputerD</name><type>Laptop Holder</type><color>Silver</color><price>100</price></furniture><furniture><id>1023</id><name>Foldable Bed</name><type>Bed</type><color/><price>600</price></furniture><furniture><id>1457</id><name>Computer Holder XX23</name><type>Casing</type><color>Black</color><price>245</price></furniture></furnitures>
