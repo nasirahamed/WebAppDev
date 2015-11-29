@@ -2,34 +2,35 @@
 if (isset($_POST['insert']))
 {
 	$xml = new DomDocument("1.0","UTF-8");
-	$xml->load('studentdb.xml');
+	$xml->load('xml/furnitures.xml');
 
-	$cname = $_POST['c_name'];
-	$hadd = $_POST['h_add'];
+	$id = $_POST['id']; //Holding the value for furniture id
+	$name = $_POST['name']; //Holding the value for furniture name
+	$type = $_POST['type']; //Holding the value for furniture type
+	$color = $_POST['color']; //Holding the value for furniture color
+	$price = $_POST['price']; //Holding the value for furniture price
 
-	$rootTag = $xml->getElementsByTagName("root")->item(0);
+	$furnituresTag = $xml->getElementsByTagName("furnitures")->item(0);
 
-	$infoTag = $xml->createElement("info");
-		$nameTag = $xml->createElement("name", $cname);
-		$addTag = $xml->createElement("address", $hadd);
-
-		$infoTag->appendChild($nameTag);
-		$infoTag->appendChild($addTag);
-
+	$furnitureTag = $xml->createElement("furniture");
+		$idTag = $xml->createElement("id", $id);
+		$nameTag = $xml->createElement("name", $name);
+		$typeTag = $xml->createElement("type", $type);
+		$colorTag = $xml->createElement("color", $id);
+		$priceTag = $xml->createElement("price", $price);
+		
+			//Appending the child element in the furniture element start here
+			$furnitureTag->appendChild($idTag);
+			$furnitureTag->appendChild($nameTag);
+			$furnitureTag->appendChild($typeTag);
+			$furnitureTag->appendChild($colorTag);
+			$furnitureTag->appendChild($priceTag);
+			//Appending the child element in the furniture element ends here
+	
+	//Appending the all furniture tag inside furnitures(root) tag starts
 	$rootTag->appendChild($infoTag);
-	$xml->save('studentdb.xml'); 
-
+	//Appending the all furniture tag inside furnitures(root) tag starts
+	
+	$xml->save('xml/furnitures.xml'); //Writing content in the furnitures.xml file
 }
 ?>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form method="POST" action="insertxml.php">
-	Stud Info <br />
-	Fname <input type = "text" name = "c_name"><br />
-	Address <input type="text" name="h_add"><br />
-	<input type = "submit" name="insert" value="add">
-	</form>
-</body>
