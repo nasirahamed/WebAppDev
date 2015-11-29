@@ -38,11 +38,11 @@ if (isset($_POST['insert']))
 		<body>
 			<form method="POST" action="xml_manipulate/addelement.php">
 			<strong>Add Furniture</strong> <br />
-			Furniture ID: <input type = "text" name = "id"><br />
-			Furniture Name: <input type = "text" name = "name"><br />
-			Type: <input type = "text" name = "name"><br />
-			Color: <input type = "text" name = "name"><br />
-			Price <input type = "text" name = "name"><br />
+			ID: <input type = "text" name = "id"><br />
+			Name: <input type = "text" name = "name"><br />
+			Type: <input type = "text" name = "type"><br />
+			Color: <input type = "text" name = "color"><br />
+			Price <input type = "text" name = "price"><br />
 			<input type = "submit" name="insert" value="add">
 			</form>
 		</body>
