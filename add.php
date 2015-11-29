@@ -110,7 +110,7 @@ if (isset($_POST['insert']))
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-9">
 
             <form class="form-horizontal" role="form" method="POST" action="add.php">
             <p class="lead">Add Furniture</p>
