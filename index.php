@@ -2,10 +2,10 @@
 if (isset($_POST['insert']))
 {
 	$xml = new DomDocument("1.0","UTF-8");
-	$xml->load('studentdb.xml');
+	$xml->load('furnitures.xml');
 
-	$cname = $_POST['c_name']; //
-	$hadd = $_POST['h_add'];
+	$cname = $_POST['id']; //Holding the value for furniture id
+	$cname = $_POST['name']; //Holding the value for furniture id
 
 	$rootTag = $xml->getElementsByTagName("root")->item(0);
 
@@ -18,15 +18,8 @@ if (isset($_POST['insert']))
 
 	$rootTag->appendChild($infoTag);
 	$xml->save('studentdb.xml'); 
-
 }
 ?>
-<html>
-<head>
-	<title></title>
-</head>
-
-
 <!DOCUMENT html>
 <html lang="en">
     <head>
@@ -43,17 +36,17 @@ if (isset($_POST['insert']))
 <div class="container-fluid">
 
 		<body>
-			<form method="POST" action="index.php">
-			Stud Info <br />
-			Fname <input type = "text" name = "c_name"><br />
-			Address <input type="text" name="h_add"><br />
+			<form method="POST" action="xml_manipulate/addelement.php">
+			<strong>Add Furniture</strong> <br />
+			Furniture ID: <input type = "text" name = "id"><br />
+			Furniture Name: <input type = "text" name = "name"><br />
+			Type: <input type = "text" name = "name"><br />
+			Color: <input type = "text" name = "name"><br />
+			Price <input type = "text" name = "name"><br />
 			<input type = "submit" name="insert" value="add">
 			</form>
 		</body>
 
-        
 </div>
-    
-    
 </body>
 </html>
