@@ -44,11 +44,9 @@ if (isset($_POST['insert']))
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
-
 <body>
     
 <div class="container-fluid">
-
 		<body>
 			<form method="POST" action="index.php">
 			<strong>Add Furniture</strong> <br />
@@ -60,7 +58,6 @@ if (isset($_POST['insert']))
 			<input type = "submit" name="insert" value="Add to Stock">
 			</form>
 		</body>
-
 </div>
 </body>
 </html>
