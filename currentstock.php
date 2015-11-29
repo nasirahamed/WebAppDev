@@ -100,15 +100,6 @@ $furnitures = $arr->furniture;
                             ?>
                         </tbody>
                     </table>
-
-
-
-
-
-
-
-                 
-
                 </div>
 
             </div>
