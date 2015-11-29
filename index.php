@@ -2,7 +2,7 @@
 if (isset($_POST['insert']))
 {
 	$xml = new DomDocument("1.0","UTF-8");
-	$xml->load('furnitures.xml');
+	$xml->load('xml/furnitures.xml');
 
 	$id = $_POST['id']; //Holding the value for furniture id
 	$name = $_POST['name']; //Holding the value for furniture name
@@ -16,7 +16,7 @@ if (isset($_POST['insert']))
 		$idTag = $xml->createElement("id", $id);
 		$nameTag = $xml->createElement("name", $name);
 		$typeTag = $xml->createElement("type", $type);
-		$colorTag = $xml->createElement("color", $id);
+		$colorTag = $xml->createElement("color", $color);
 		$priceTag = $xml->createElement("price", $price);
 		
 			//Appending the child element in the furniture element start here
@@ -28,7 +28,7 @@ if (isset($_POST['insert']))
 			//Appending the child element in the furniture element ends here
 	
 	//Appending the all furniture tag inside furnitures(root) tag starts
-	$rootTag->appendChild($infoTag);
+	$furnituresTag->appendChild($furnitureTag);
 	//Appending the all furniture tag inside furnitures(root) tag starts
 	
 	$xml->save('xml/furnitures.xml'); //Writing content in the furnitures.xml file
@@ -50,7 +50,7 @@ if (isset($_POST['insert']))
 <div class="container-fluid">
 
 		<body>
-			<form method="POST" action="xml_manipulate/addelement.php">
+			<form method="POST" action="index.php">
 			<strong>Add Furniture</strong> <br />
 			ID: <input type = "text" name = "id"><br />
 			Name: <input type = "text" name = "name"><br />

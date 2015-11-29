@@ -1,34 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <furnitures>
     <furniture>
         <id>1001</id>
-        <name>Wooden Alpha</name>
-        <type>Dining Table</type>
-        <color>Dark Blue</color>
-        <price>€150.00</price>
+        <name>TopTop</name>
+        <type>Computer desk</type>
+        <color>Brown</color>
+        <price>280</price>
     </furniture>
-    
     <furniture>
-        <id>1002</id>
-        <name>TopTable</name>
-        <type>Study Table</type>
-        <color>Wooden Dark</color>
-        <price>€250.00</price>
-    </furniture>
-    
-    <furniture>
-        <id>1003</id>
-        <name>Sweet Sleep</name>
-        <type>Bed</type>
-        <color>White</color>
-        <price>€350.00</price>
-    </furniture>
-    
-    <furniture>
-        <id>1004</id>
-        <name>Inter4569</name>
-        <type>Lab Chair</type>
-        <color>Black</color>
-        <price>€750.00</price>
+        <id>1005</id>
+        <name>Ding Dong</name>
+        <type>Table</type>
+        <color>Wooden</color>
+        <price>120</price>
     </furniture>
 </furnitures>
