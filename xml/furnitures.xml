@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <furnitures>
-    
     <furniture>
         <id>1002</id>
         <name>Ding Dong</name>
@@ -14,5 +13,12 @@
         <type>Office Desk</type>
         <color>Wooden Black</color>
         <price>120</price>
+    </furniture>
+    <furniture>
+        <id>1002</id>
+        <name>AppleTable</name>
+        <type>Apple Desktop Table</type>
+        <color>Wood</color>
+        <price>450</price>
     </furniture>
 </furnitures>
