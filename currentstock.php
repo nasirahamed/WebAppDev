@@ -67,7 +67,7 @@ $furnitures = $arr->furniture;
                 
                 <div class="list-group">
                     <a href="add.php" class="list-group-item">Add Furniture</a>
-                    <a href="remove.php" class="list-group-item">Remove Furniture</a>
+                    <a href="remove.php" class="list-group-item">Remove Furniture by ID</a>
                     <a href="search.php" class="list-group-item">Search Furniture</a>
                     <a href="currentstock.php" class="list-group-item">Current Stock</a>
                 </div>
