@@ -196,7 +196,7 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->type ?></td>
                                 <td><?php echo $row->color ?></td>
                                 <td><?php echo $row->price ?></td>
-                                <td align="center">Edit | <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure?')">Delete</a></td>
+                                <td align="center">Edit | <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure, you want to delete it?')">Delete</a></td>
                             </tr>
                             <?php
                             }
