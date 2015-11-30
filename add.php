@@ -1,4 +1,7 @@
+
 <?php 
+//Inline delete starts here
+//Code extracted and modified from https://www.youtube.com/watch?v=z_m33GhTecA
 require 'simplexml.class.php';
 if (isset($_GET['action'])) {
     $furnitures = simplexml_load_file('xml/furnitures.xml');
@@ -15,6 +18,7 @@ if (isset($_GET['action'])) {
     file_put_contents('xml/furnitures.xml', $furnitures->asXML());
 }
 $furnitures = simplexml_load_file('xml/furnitures.xml');
+//In line delete ends here
 ?>
 
 <?php 
