@@ -185,6 +185,8 @@ $furnitures = $arr->furniture;
                                 <th>Type</th>
                                 <th>Color</th>
                                 <th>Price</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -196,7 +198,16 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->type ?></td>
                                 <td><?php echo $row->color ?></td>
                                 <td><?php echo $row->price ?></td>
-                                <td align="center">Edit | <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure, you want to delete it?')">Delete</a></td>
+                                <td style="width: 25px; text-align: center;">
+                                    <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure, you want to edit it?')">
+                                        <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
+                                    </a>
+                                </td>
+                                <td style="width: 25px; text-align: center;">
+                                    <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+                                        <button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;"><span class="glyphicon glyphicon-trash"></span></button>
+                                    </a>
+                                </td>
                             </tr>
                             <?php
                             }
