@@ -1,4 +1,23 @@
 <?php 
+require 'simplexml.class.php';
+if (isset($_GET['action'])) {
+    $furnitures = simplexml_load_file('xml/furnitures.xml');
+    $id = $_GET['id'];
+    $index = 0;
+    $i = 0;
+    foreach ($furnitures->furniture as $furniture) {
+        if($furniture->id==$id) {
+            $index = $i;
+        }
+        $i++;
+    }
+    unset($furnitures->furniture[$index]);
+    file_put_contents('xml/furnitures.xml', $furnitures->asXML());
+}
+$furnitures = simplexml_load_file('xml/furnitures.xml');
+?>
+
+<?php 
 if (isset($_POST['insert']))
 {
     $xml = new DomDocument("1.0","UTF-8");
@@ -27,11 +46,11 @@ if (isset($_POST['insert']))
             $furnitureTag->appendChild($priceTag);
             //Appending the child element in the furniture element ends here
     
-    //Appending the all furniture tag inside furnitures(root) tag starts
+    //Appending the all furniture tag inside furnitures(root) tag starts here
     $furnituresTag->appendChild($furnitureTag);
-    //Appending the all furniture tag inside furnitures(root) tag starts
+    //Appending the all furniture tag inside furnitures(root) tag ends here
     
-    $xml->save('xml/furnitures.xml'); //Writing content in the furnitures.xml file
+    $xml->save('xml/furnitures.xml'); //Writing/Saving the content in the furnitures.xml file
 }
 ?>
 <?php //loading the xml file content
@@ -173,28 +192,13 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->type ?></td>
                                 <td><?php echo $row->color ?></td>
                                 <td><?php echo $row->price ?></td>
+                                <td align="center">Edit | <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure?')">Delete</a></td>
                             </tr>
                             <?php
                             }
                             ?>
                         </tbody>
                     </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
             </div>
