@@ -157,7 +157,7 @@ $furnitures = $arr->furniture;
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>ID#</th>
                                 <th>Name</th>
                                 <th>Type</th>
                                 <th>Color</th>
