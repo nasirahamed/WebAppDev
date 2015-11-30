@@ -1,4 +1,3 @@
-
 <?php 
 //Inline delete starts here
 //Code extracted and modified from https://www.youtube.com/watch?v=z_m33GhTecA
@@ -170,7 +169,7 @@ $furnitures = $arr->furniture;
                     <div class="form-group">
                         <label class="col-sm-2 control-label"></label>
                             <div class="col-sm-10">
-                                <button type = "submit" class="btn btn-primary" name="insert">Add to Stock</button>
+                                <button type = "submit" class="btn btn-primary" name="insert">Add</button>
                             </div>
                     </div>
             </form>
@@ -199,7 +198,7 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->color ?></td>
                                 <td><?php echo $row->price ?></td>
                                 <td style="width: 25px; text-align: center;">
-                                    <a href="">
+                                    <a href="edit.php?id=<?php echo $furniture['id']; ?>">
                                         <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
                                     </a>
                                 </td>
