@@ -19,7 +19,6 @@ if (isset($_GET['action'])) {
 $furnitures = simplexml_load_file('xml/furnitures.xml');
 //In line delete ends here
 ?>
-
 <?php 
 if (isset($_POST['insert']))
 {
@@ -198,15 +197,16 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->color ?></td>
                                 <td><?php echo $row->price ?></td>
                                 <td style="width: 25px; text-align: center;">
-                                    <a href="edit.php?id=<?php echo $furniture['id']; ?>">
+                                    <a href="edit.php?id=<?php echo $furniture->id; ?>">
                                         <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
                                     </a>
                                 </td>
                                 <td style="width: 25px; text-align: center;">
-                                    <a href="add.php?action=delete&id=<?php echo $furniture; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+                                    <a href="add.php?action=delete&id=<?php echo $furniture['id']; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
                                         <button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;"><span class="glyphicon glyphicon-trash"></span></button>
                                     </a>
                                 </td>
+      
                             </tr>
                             <?php
                             }
