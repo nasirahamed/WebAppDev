@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<furnitures>
+    <furniture>
+        <id>1005</id>
+        <name>Purple D</name>
+        <type>Wooden PF</type>
+        <color>Black</color>
+        <price>888</price>
+    </furniture>
+    <furniture>
+        <id>1004</id>
+        <name>S Dream</name>
+        <type>Bed</type>
+        <color>Purple</color>
+        <price>250</price>
+    </furniture>
+    <furniture>
+        <id>1007</id>
+        <name>M Dye</name>
+        <type>Office Desk</type>
+        <color>Yellow</color>
+        <price>345</price>
+    </furniture>
+    <furniture>
+        <id>1010</id>
+        <name>TP 1</name>
+        <type>Chair</type>
+        <color>White</color>
+        <price>120</price>
+    </furniture>
+    <furniture>
+        <id>7643</id>
+        <name>Mehegoni Oak</name>
+        <type>Room Corner</type>
+        <color>Browne Light</color>
+        <price>45</price>
+    </furniture>
+    <furniture>
+        <id>7000</id>
+        <name>Pipin Tree</name>
+        <type>Baby Chair</type>
+        <color>Pink</color>
+        <price>95</price>
+    </furniture>
+    <furniture>
+        <id>4532</id>
+        <name>Purple Deck</name>
+        <type>Chair</type>
+        <color>Wooden</color>
+        <price>50</price>
+    </furniture>
+    <furniture>
+        <id>1909</id>
+        <name>Test1</name>
+        <type>Bed</type>
+        <color>Blue</color>
+        <price>230</price>
+    </furniture>
+</furnitures>
