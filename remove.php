@@ -89,7 +89,7 @@ $furnitures = $arr->furniture;
 
            
             <form class="form-horizontal" role="form" method="POST" action="remove.php">
-            <p class="lead">Remove Furniture</p>
+            <p class="lead">Remove Furniture by ID#</p>
 
             <div class="form-group">
                     <label class="col-sm-2 control-label">FurnitureID#</label>
@@ -101,7 +101,7 @@ $furnitures = $arr->furniture;
             <div class="form-group">
                     <label class="col-sm-2 control-label"></label>
                         <div class="col-sm-10">
-                            <button type = "submit" class="btn btn-warning" name="insert">Remove</button>
+                            <button type = "submit" class="btn btn-warning" name="insert">Remove Stock </button>
                         </div>
             </div>            
 
