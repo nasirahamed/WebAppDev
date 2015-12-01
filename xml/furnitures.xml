@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
-    <furniture>
-        <id>1287</id>
-        <name>Desh</name>
-        <type>Chair</type>
-        <color>Black</color>
-        <price>87</price>
-    </furniture>
+    
     <furniture>
         <id>1290</id>
         <name>English</name>
@@ -28,4 +22,4 @@
         <color>Silver</color>
         <price>780</price>
     </furniture>
-</furnitures>
+<furniture><id>8902</id><name>Board CXL</name><type>Wooden PF</type><color>Black</color><price>12.00</price></furniture><furniture><id>8956</id><name>Deck Board</name><type>Deck Cubbord</type><color>Brown</color><price>78.00</price></furniture></furnitures>
