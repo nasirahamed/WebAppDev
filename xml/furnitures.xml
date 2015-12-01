@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <furnitures>
-    
-    
-    
-<furniture><id>1287</id><name>Desh</name><type>Chair</type><color>Black</color><price>87</price></furniture><furniture><id>1290</id><name>English</name><type>Cover</type><color>Blue</color><price>900</price></furniture></furnitures>
+    <furniture>
+        <id>1287</id>
+        <name>Desh</name>
+        <type>Chair</type>
+        <color>Black</color>
+        <price>87</price>
+    </furniture>
+    <furniture>
+        <id>1290</id>
+        <name>English</name>
+        <type>Cover</type>
+        <color>Blue</color>
+        <price>900</price>
+    </furniture>
+    <furniture>
+        <id>7484</id>
+        <name>WoodFly</name>
+        <type>Bench</type>
+        <color>Blue</color>
+        <price>83</price>
+    </furniture>
+    <furniture>
+        <id>6300</id>
+        <name>Alpha XL</name>
+        <type>Bed Base</type>
+        <color>Silver</color>
+        <price>780</price>
+    </furniture>
+</furnitures>
