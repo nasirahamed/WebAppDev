@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
     <furniture>
         <id>1005</id>
-        <name>Purple D</name>
+        <name>Purple Table</name>
         <type>Wooden PF</type>
         <color>Black</color>
         <price>888</price>
@@ -56,4 +56,4 @@
         <color>Blue</color>
         <price>230</price>
     </furniture>
-</furnitures>
+<furniture><id>2398</id><name>Journ</name><type>Bed</type><color>Wood Black</color><price>9000</price></furniture></furnitures>
