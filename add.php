@@ -127,41 +127,41 @@ $furnitures = $arr->furniture;
 
             <div class="col-md-9">
 
-            <form class="form-horizontal" role="form" method="POST" action="add.php">
+            <form class="form-horizontal" role="form" method="POST" action="add.php" onsubmit="return(login())">
             <p class="lead">Add Furniture</p>
                 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Furniture#</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="id">
+                                <input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID">
                             </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="name">
+                                <input class="form-control" type="text" name="name" placeholder="Name" required title="Please enter the Furniture name">
                             </div>
                     </div>              
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Type</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="type">
+                                <input class="form-control" type="text" name="type" placeholder="Type" required title="What type of furniture it is?">
                             </div>
                     </div> 
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Color</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="color">
+                                <input class="form-control" type="text" name="color" placeholder="Color" required title="Type the color of your furniture">
                             </div>
                     </div> 
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Price</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="price">
+                                <input class="form-control" type="text" name="price" placeholder="Price" required title="Price cannot be left empty">
                             </div>
                     </div>
 

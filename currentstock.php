@@ -93,7 +93,7 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->name ?></td>
                                 <td><?php echo $row->type ?></td>
                                 <td><?php echo $row->color ?></td>
-                                <td><?php echo $row->price ?></td>
+                                <td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
                             </tr>
                             <?php
                             }

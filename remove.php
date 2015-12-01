@@ -88,13 +88,13 @@ $furnitures = $arr->furniture;
             <div class="col-md-9">
 
            
-            <form class="form-horizontal" role="form" method="POST" action="remove.php">
+            <form class="form-horizontal" role="form" method="POST" action="remove.php" onsubmit="return(login())">
             <p class="lead">Remove Furniture by ID#</p>
 
             <div class="form-group">
                     <label class="col-sm-2 control-label">FurnitureID#</label>
                         <div class="col-sm-6">
-                            <input class="form-control" type="text" name="id">
+                            <input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID#">
                         </div>
             </div>
 

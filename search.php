@@ -52,7 +52,7 @@
                     },
                     minLength: 2,
                     select: function(event, ui) {
-                        $("p#result").html(ui.item ? "<b><u>Furniture Found: </u></b> " + ui.item.value + ", ID# " + ui.item.id : "Nothing selected, input was " + this.value);
+                        $("p#result").html(ui.item ? "<b><u>Furniture Found</u>:</b> " + ui.item.value + ", ID# " + ui.item.id : "Nothing selected, input was " + this.value);
                     }
                 });
             }
@@ -151,7 +151,7 @@
             <p class="lead">Search Furniture by Name</p>
             <div id="custom-search-input">
                 <div class="input-group col-md-6">
-                    <input type="text" class="  search-query form-control" placeholder="Search" id="test" />
+                    <input type="text" class="  search-query form-control" placeholder="Search" id="test"/>
                     <span class="input-group-btn">
                         <button class="btn btn-danger" type="button">
                             <span class=" glyphicon glyphicon-search"></span>

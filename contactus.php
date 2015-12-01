@@ -71,20 +71,20 @@
             <div class="col-md-9">
 
                   
-                  <form role="form">
+                  <form role="form" onsubmit="return(login())">
                     <div class="form-group">
                       <label for="usr">First Name:</label>
-                      <input type="text" class="form-control" id="usr">
+                      <input type="text" class="form-control" id="first" placeholder="First Name" required title="First Name cannot be empty">
                     </div>
 
                     <div class="form-group">
                       <label for="usr">Last Name:</label>
-                      <input type="text" class="form-control" id="usr">
+                      <input type="text" class="form-control" id="last" placeholder="Last Name" required title="Last Name cannot be empty">
                     </div>
 
                     <div class="form-group">
                         <label for="comment">Your Message:</label>
-                        <textarea class="form-control" rows="8" id="comment"></textarea>
+                        <textarea class="form-control" rows="8" id="comment" placeholder="Message" required title="Message cannot be empty"></textarea>
                     </div>
                     <button type = "submit" class="btn btn-primary" name="insert">Send</button>
                   </form>
