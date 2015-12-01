@@ -197,7 +197,7 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->color ?></td>
                                 <td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
                                 <td style="width: 25px; text-align: center;">
-                                    <a href="edit.php?id=<?php echo $furniture->id; ?>">
+                                    <a href="edit.php?id=<?php echo $furniture['id']; ?>">
                                         <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
                                     </a>
                                 </td>
