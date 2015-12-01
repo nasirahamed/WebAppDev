@@ -182,7 +182,7 @@ $furnitures = $arr->furniture;
                                 <th>Name</th>
                                 <th>Type</th>
                                 <th>Color</th>
-                                <th>Price</th>
+                                <th style="text-align: right;">Price</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
@@ -195,7 +195,7 @@ $furnitures = $arr->furniture;
                                 <td><?php echo $row->name ?></td>
                                 <td><?php echo $row->type ?></td>
                                 <td><?php echo $row->color ?></td>
-                                <td><?php echo '€'.$row->price.'.00' ?></td>
+                                <td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
                                 <td style="width: 25px; text-align: center;">
                                     <a href="edit.php?id=<?php echo $furniture->id; ?>">
                                         <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>
