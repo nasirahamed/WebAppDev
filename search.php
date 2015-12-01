@@ -52,7 +52,7 @@
                     },
                     minLength: 2,
                     select: function(event, ui) {
-                        $("p#result").html(ui.item ? "<b>Furniture Found: </b> " + ui.item.value + ", ID# " + ui.item.id : "Nothing selected, input was " + this.value);
+                        $("p#result").html(ui.item ? "<b><u>Furniture Found: </u></b> " + ui.item.value + ", ID# " + ui.item.id : "Nothing selected, input was " + this.value);
                     }
                 });
             }
@@ -159,14 +159,8 @@
                     </span>
                 </div>
             </div>
-
-            <!-- <p id ="result" class="alert alert-info"> </p> -->
-             <br> <br>    
-            
-
-
-            <div class="container">
-            <p id="result" class="alert alert-success col-md-6"></p>
+            <div class="container"><br>
+            <p id="result" class="text-success"></p>
                 <div class="row">
 
                     <div class="col-md-9">
