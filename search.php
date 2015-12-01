@@ -192,10 +192,6 @@
 
             </div>
             <!-- /.container -->
-
-            <!-- jQuery -->
-
-
 </body>
 
 </html>
