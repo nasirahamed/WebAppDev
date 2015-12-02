@@ -77,7 +77,9 @@
                         <!-- <label for="Your Message"></label> -->
                         <textarea class="form-control" rows="8" id="comment" placeholder="Your Message" required title="Message cannot be empty"></textarea>
                     </div>
-                    <button type = "submit" class="btn btn-primary" name="insert">Send</button>
+                    <button type = "submit" class="btn btn-primary" name="insert">Send
+                    <span class="glyphicon glyphicon-send"></span>
+                    </button>
                   </form>
             </div>
         </div>
