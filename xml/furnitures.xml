@@ -2,11 +2,5 @@
 <furnitures>
     
     
-    <furniture>
-        <id>4546</id>
-        <name>Mtto</name>
-        <type>Chair T</type>
-        <color>White</color>
-        <price>50</price>
-    </furniture>
-<furniture><id>1010</id><name>Koi</name><type>Bed</type><color>Black</color><price>100</price></furniture></furnitures>
+    
+<furniture><id>1010</id><name>Product Style</name><type>Comb</type><color>Black koNasir</color><price>100</price></furniture><furniture><id>1004</id><name>PD2</name><type>Lamp Post</type><color>Green</color><price>89</price></furniture></furnitures>

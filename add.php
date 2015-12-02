@@ -1,5 +1,5 @@
 <?php 
-//Inline delete starts here
+//Inline delete starts here 
 //Code extracted and modified from https://www.youtube.com/watch?v=z_m33GhTecA
 require 'simplexml.class.php';
 if (isset($_GET['action'])) {
@@ -10,6 +10,7 @@ if (isset($_GET['action'])) {
     foreach ($furnitures->furniture as $furniture) {
         if($furniture->id==$id) {
             $index = $i;
+            break;
         }
         $i++;
     }
@@ -219,7 +220,7 @@ $furnitures = $arr->furniture;
       
                             </tr>
                             <?php
-                            }
+                           }
                             ?>
                         </tbody>
                     </table>
