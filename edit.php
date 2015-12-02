@@ -99,7 +99,7 @@ if(isset($_POST['insert'])){
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Furniture#</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="id" value="<?php echo $id; ?>">
+                                <input class="form-control" type="text" name="id" value="<?php echo $id; ?>" readonly=""></input>
                             </div>
                     </div>
 
