@@ -3,39 +3,6 @@
     
     
     
-    <furniture>
-        <id>1010</id>
-        <name>TP 1</name>
-        <type>Chair</type>
-        <color>White</color>
-        <price>120</price>
-    </furniture>
-    <furniture>
-        <id>7643</id>
-        <name>Mehegoni Oak</name>
-        <type>Room Corner</type>
-        <color>Browne Light</color>
-        <price>45</price>
-    </furniture>
-    <furniture>
-        <id>7000</id>
-        <name>Pipin Tree</name>
-        <type>Baby Chair</type>
-        <color>Pink</color>
-        <price>95</price>
-    </furniture>
-    <furniture>
-        <id>4532</id>
-        <name>Purple Deck</name>
-        <type>Chair</type>
-        <color>Wooden</color>
-        <price>50</price>
-    </furniture>
-    <furniture>
-        <id>1909</id>
-        <name>Nasir Ahamed</name>
-        <type>Bed</type>
-        <color>Blue</color>
-        <price>230</price>
-    </furniture>
-<furniture><id>2398</id><name>Journ</name><type>Bed</type><color>Wood Black</color><price>9000</price></furniture><furniture><id>5639</id><name>TreeInt XP</name><type>Revolving Chair</type><color>Black</color><price>150</price></furniture></furnitures>
+    
+    
+<furniture><id>1004</id><name>Darak Wood</name><type>Wooden PF</type><color>Black Cheque</color><price>3000</price></furniture></furnitures>
