@@ -90,18 +90,20 @@ $furnitures = $arr->furniture;
            
             <form class="form-horizontal" role="form" method="POST" action="remove.php" onsubmit="return(login())">
             <p class="lead">Remove Furniture by ID#</p>
-
+            
+            
             <div class="form-group">
-                    <label class="col-sm-2 control-label">FurnitureID#</label>
+                    <!-- <label class="col-sm-2 control-label">Furniture ID#</label> -->
                         <div class="col-sm-6">
-                            <input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID#">
+                            <input class="form-control" type="text" name="id" placeholder="Furniture ID#" required title="Please type furniture ID#">
                         </div>
             </div>
+            
 
             <div class="form-group">
-                    <label class="col-sm-2 control-label"></label>
+                    <label class="col-sm-6 control-label"></label>
                         <div class="col-sm-10">
-                            <button type = "submit" class="btn btn-warning" name="insert">Remove Stock </button>
+                            <button type = "submit" class="btn btn-danger" name="insert">Remove</button>
                         </div>
             </div>            
 
