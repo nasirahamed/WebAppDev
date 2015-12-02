@@ -103,7 +103,9 @@ $furnitures = $arr->furniture;
             <div class="form-group">
                     <label class="col-sm-6 control-label"></label>
                         <div class="col-sm-10">
-                            <button type = "submit" class="btn btn-danger" name="insert">Remove</button>
+                            <button type = "submit" class="btn btn-danger" name="insert">Remove
+                            <span class=" glyphicon glyphicon-remove"></span>
+                            </button>
                         </div>
             </div>            
 
