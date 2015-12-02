@@ -4,7 +4,7 @@ require 'simplexml.class.php';
 $furnitures = simplexml_load_file('xml/furnitures.xml');
 if(isset($_POST['insert'])){
     foreach ($furnitures->furniture as $furniture) {
-        if($furniture['id'] == $_POST['id']){ //if($furniture['id'] == $_POST['id'])
+        if($furniture->id == $_POST['id']){ //if($furniture['id'] == $_POST['id'])
             $furniture->name = $_POST['name'];
             $furniture->type = $_POST['type'];
             $furniture->color = $_POST['color'];
@@ -16,7 +16,7 @@ if(isset($_POST['insert'])){
     header('location: add.php');
 }
     foreach ($furnitures->furniture as $furniture) {
-        if($furniture['id'] == $_GET['id']) { //if($furniture['id'] == $_GET['id'])
+        if($furniture->id == $_GET['id']) { //if($furniture['id'] == $_GET['id'])
             $id = $furniture->id;
             $name = $furniture->name;
             $type = $furniture->type;
