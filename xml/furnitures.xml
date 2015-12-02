@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
-    <furniture>
-        <id>1005</id>
-        <name>Purple Table</name>
-        <type>Wooden PF</type>
-        <color>Black</color>
-        <price>888</price>
-    </furniture>
-    <furniture>
-        <id>1004</id>
-        <name>S Dream</name>
-        <type>Bed</type>
-        <color>Purple</color>
-        <price>250</price>
-    </furniture>
-    <furniture>
-        <id>1007</id>
-        <name>M Dye</name>
-        <type>Office Desk</type>
-        <color>Yellow</color>
-        <price>345</price>
-    </furniture>
+    
+    
+    
     <furniture>
         <id>1010</id>
         <name>TP 1</name>
