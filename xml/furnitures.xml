@@ -2,5 +2,11 @@
 <furnitures>
     
     
-    
-<furniture><id>4580</id><name>Tatanumk</name><type>Watch</type><color>Green</color><price>80</price></furniture><furniture><id>54545</id><name>Bangla</name><type>Lang</type><color>Green</color><price>99</price></furniture></furnitures>
+    <furniture>
+        <id>4546</id>
+        <name>Mtto</name>
+        <type>Chair TESt</type>
+        <color>White</color>
+        <price>50</price>
+    </furniture>
+<furniture><id>1010</id><name>Koi</name><type>Bed</type><color>Black</color><price>100</price></furniture></furnitures>
