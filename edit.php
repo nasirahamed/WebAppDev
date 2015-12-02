@@ -94,7 +94,7 @@ if(isset($_POST['insert'])){
             <div class="col-md-9">
 
             <form class="form-horizontal" role="form" method="POST" action="edit.php">
-            <p class="lead">Add Furniture</p>
+            <p class="lead">Edit Furniture</p>
                 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Furniture#</label>
