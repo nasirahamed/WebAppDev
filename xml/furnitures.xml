@@ -38,4 +38,4 @@
         <color>Blue</color>
         <price>230</price>
     </furniture>
-<furniture><id>2398</id><name>Journ</name><type>Bed</type><color>Wood Black</color><price>9000</price></furniture></furnitures>
+<furniture><id>2398</id><name>Journ</name><type>Bed</type><color>Wood Black</color><price>9000</price></furniture><furniture><id>5639</id><name>TreeInt XP</name><type>Revolving Chair</type><color>Black</color><price>150</price></furniture></furnitures>

@@ -52,7 +52,7 @@
                     },
                     minLength: 2,
                     select: function(event, ui) {
-                        $("p#result").html(ui.item ? "<b><u>Search Result</u>: </b>" + ui.item.value + ", ID#: " + ui.item.id : "Nothing selected, input was " + this.value);
+                        $("p#result").html(ui.item ? "<b><u>Search Result</u>: </b>" + ui.item.value + ", ID# " + ui.item.id : "Nothing selected, input was " + this.value);
                     }
                 });
             }
