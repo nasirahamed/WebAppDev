@@ -29,4 +29,4 @@
         <price>85</price>
     </furniture>
     
-<furniture><id>1003</id><name>Darak Wood</name><type>Wooden PF</type><color>Brown</color><price>8000</price></furniture></furnitures>
+<furniture><id>1003</id><name>Darak Wood</name><type>Wooden PF</type><color>Brown</color><price>8000</price></furniture><furniture><id>1006</id><name>Darak Wood</name><type>Cubboard</type><color>Brown</color><price>3000</price></furniture></furnitures>
