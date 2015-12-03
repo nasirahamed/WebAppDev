@@ -105,28 +105,28 @@ if(isset($_POST['insert'])){
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="name" value="<?php echo $name; ?>">
+                                <input class="form-control" type="text" name="name" placeholder="Name" required title="Name cannot be empty" value="<?php echo $name; ?>">
                             </div>
                     </div>              
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Type</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="type" value="<?php echo $type; ?>">
+                                <input class="form-control" type="text" name="type" placeholder="Type" required title="Type cannot be empty" value="<?php echo $type; ?>">
                             </div>
                     </div> 
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Color</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="color" value="<?php echo $color; ?>">
+                                <input class="form-control" type="text" name="color" placeholder="Color" required title="Color cannot be empty" value="<?php echo $color; ?>">
                             </div>
                     </div> 
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Price</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="price" value="<?php echo $price; ?>">
+                                <input class="form-control" type="text" name="price" placeholder="Price" required title="Price cannot be empty" value="<?php echo $price; ?>">
                             </div>
                     </div>
 
