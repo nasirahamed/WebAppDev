@@ -34,12 +34,15 @@ if (isset($_POST['insert']))
 
     $furnituresTag = $xml->getElementsByTagName("furnitures")->item(0);
 
-    $furnitureTag = $xml->createElement("furniture");
+
+
+        $furnitureTag = $xml->createElement("furniture");
         $idTag = $xml->createElement("id", $id);
         $nameTag = $xml->createElement("name", $name);
         $typeTag = $xml->createElement("type", $type);
         $colorTag = $xml->createElement("color", $color);
         $priceTag = $xml->createElement("price", $price);
+
         
             //Appending the child element in the furniture element start here
             $furnitureTag->appendChild($idTag);
