@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 			<head>
-				<title>Add Furniture</title>
+				<title>Contact Us</title>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,20 +52,25 @@
                     <a href="currentstock.php" class="list-group-item">Current Stock</a>
                 </div>
             </div>
+            
             <div class="col-md-9">
                   <form role="form" onsubmit="return(login())">
+                    
                     <div class="form-group">
                       <!-- <label for="First Name"></label> -->
                       <input type="text" class="form-control" id="first" placeholder="First Name" required title="First Name cannot be empty">
                     </div>
+                    
                     <div class="form-group">
                       <!-- <label for="Last Name"></label> -->
                       <input type="text" class="form-control" id="last" placeholder="Last Name" required title="Last Name cannot be empty">
                     </div>
+                    
                     <div class="form-group">
                         <!-- <label for="Your Message"></label> -->
                         <textarea class="form-control" rows="8" id="comment" placeholder="Your Message" required title="Message cannot be empty"></textarea>
                     </div>
+                    
                     <button type = "submit" class="btn btn-primary" name="insert">Send
                     <span class="glyphicon glyphicon-send"></span>
                     </button>
