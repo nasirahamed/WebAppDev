@@ -97,6 +97,7 @@ $furnitures = $arr->furniture;
 				</button>
 					<a class="navbar-brand" href="index.php">Inventory Management System</a>
 				</div>
+	
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
@@ -113,25 +114,24 @@ $furnitures = $arr->furniture;
 
 <div class="row">
 
-<div class="col-md-3">
-
-<div class="list-group"><a href="add.php" class="list-group-item">Add
-Furniture</a> <a href="remove.php" class="list-group-item">Remove
-Furniture by ID</a> <a href="search.php" class="list-group-item">Search
-Furniture</a> <a href="currentstock.php" class="list-group-item">Current
-Stock</a></div>
-</div>
+		<div class="col-md-3">
+			<div class="list-group">
+				<a href="add.php" class="list-group-item">AddFurniture</a>
+				<a href="remove.php" class="list-group-item">Remove Furniture by ID</a> 
+				<a href="search.php" class="list-group-item">SearchFurniture</a> 
+				<a href="currentstock.php" class="list-group-item">Current Stock</a>
+			</div>
+		</div>
 
 <div class="col-md-9">
 
-<form class="form-horizontal" role="form" method="POST" action="add.php"
-	onsubmit="return(login())">
-<p class="lead">Add Furniture</p>
-
-<div class="form-group"><label class="col-sm-2 control-label">Furniture#</label>
-<div class="col-sm-10"><input class="form-control" type="text" name="id"
-	placeholder="Furniture ID" required title="Please type furniture ID"></div>
-</div>
+<form class="form-horizontal" role="form" method="POST" action="add.php" onsubmit="return(login())">
+		<p class="lead">Add Furniture</p>
+		<div class="form-group"><label class="col-sm-2 control-label">Furniture#</label>
+			<div class="col-sm-10">
+				<input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID">
+			</div>
+		</div>
 
 <div class="form-group"><label class="col-sm-2 control-label">Name</label>
 <div class="col-sm-10"><input class="form-control" type="text"
