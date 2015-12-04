@@ -26,11 +26,11 @@ if (isset($_POST['insert']))
 	$xml = new DomDocument("1.0","UTF-8");
 	$xml->load('xml/furnitures.xml');
 
-	$id = $_POST['id']; //Holding the value for furniture id
-	$name = $_POST['name']; //Holding the value for furniture name
-	$type = $_POST['type']; //Holding the value for furniture type
-	$color = $_POST['color']; //Holding the value for furniture color
-	$price = $_POST['price']; //Holding the value for furniture price
+	$id = $_POST['id']; 
+	$name = $_POST['name']; 
+	$type = $_POST['type']; 
+	$color = $_POST['color']; 
+	$price = $_POST['price'];
 
 	$furnituresTag = $xml->getElementsByTagName("furnitures")->item(0);
 
@@ -111,131 +111,121 @@ $furnitures = $arr->furniture;
 
 <!-- Page Content -->
 <div class="container">
-
-<div class="row">
-
-		<div class="col-md-3">
-			<div class="list-group">
-				<a href="add.php" class="list-group-item">AddFurniture</a>
-				<a href="remove.php" class="list-group-item">Remove Furniture by ID</a> 
-				<a href="search.php" class="list-group-item">SearchFurniture</a> 
-				<a href="currentstock.php" class="list-group-item">Current Stock</a>
+	<div class="row">
+	
+			<div class="col-md-3"> <!-- Column 3 for the left bar-->
+				<div class="list-group">
+					<a href="add.php" class="list-group-item">AddFurniture</a>
+					<a href="remove.php" class="list-group-item">Remove Furniture by ID</a> 
+					<a href="search.php" class="list-group-item">SearchFurniture</a> 
+					<a href="currentstock.php" class="list-group-item">Current Stock</a>
+				</div>
 			</div>
+	
+	<div class="col-md-9"> <!-- Column 9 for the right part -->
+			<form class="form-horizontal" role="form" method="POST" action="add.php" onsubmit="return(login())">
+					<p class="lead">Add Furniture</p> <!-- Add furniture title in the form -->
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Furniture#</label>
+								<div class="col-sm-10">
+									<input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID">
+								</div>
+						</div>
+			
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input class="form-control" type="text" name="name" placeholder="Name" required title="Please enter the Furniture name">
+								</div>
+						</div>
+			
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Type</label>
+								<div class="col-sm-10">
+									<input class="form-control" type="text" name="type" placeholder="Type" required title="What type of furniture it is?">
+								</div>
+						</div>
+			
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Color</label>
+								<div class="col-sm-10">
+									<input class="form-control" type="text" name="color" placeholder="Color" required title="Type the color of your furniture">
+								</div>
+						</div>
+			
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Price</label>
+								<div class="col-sm-10">
+									<input class="form-control" type="text" name="price" placeholder="Price" required title="Price cannot be left empty">
+								</div>
+						</div>
+			
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-primary" name="insert">Add <span class="glyphicon glyphicon-plus"></span></button>
+								</div>
+						</div>
+			</form>
+	<br />
+				<div class="row">
+					<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>ID#</th>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Color</th>
+									<th style="text-align: right;">Price</th>
+									<th>Edit</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+									<?php foreach($furnitures as $row) {
+										?>
+										<tr>
+											<td><?php echo $row->id ?></td>
+											<td><?php echo $row->name ?></td>
+											<td><?php echo $row->type ?></td>
+											<td><?php echo $row->color ?></td>
+											<td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
+											
+											<td style="width: 25px; text-align: center;">
+												<a href="edit.php?id=<?php echo $row->id; ?>">
+												<button class="btn btn-primary btn-xs">
+													<span class="glyphicon glyphicon-pencil"></span>
+												</button>
+												</a>
+											</td>
+											
+											<td style="width: 25px; text-align: center;">
+												<a href="add.php?action=delete&id=<?php echo $row->id; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+												<button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;">
+													<span class="glyphicon glyphicon-trash"></span>
+												</button>
+												</a>
+											</td>
+										</tr>
+										<?php
+									}
+									?>
+							</tbody>
+					</table>
+				</div>
 		</div>
+	</div>
+</div> <!-- end of container -->
 
-<div class="col-md-9">
-
-<form class="form-horizontal" role="form" method="POST" action="add.php" onsubmit="return(login())">
-		<p class="lead">Add Furniture</p>
-		<div class="form-group"><label class="col-sm-2 control-label">Furniture#</label>
-			<div class="col-sm-10">
-				<input class="form-control" type="text" name="id" placeholder="Furniture ID" required title="Please type furniture ID">
+<div class="container"> <!-- start footer container -->
+	<hr>
+		<footer> <!-- Footer Started -->
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; Inventory Management System 2016</p>
+				</div>
 			</div>
-		</div>
-
-<div class="form-group"><label class="col-sm-2 control-label">Name</label>
-<div class="col-sm-10"><input class="form-control" type="text"
-	name="name" placeholder="Name" required
-	title="Please enter the Furniture name"></div>
-</div>
-
-<div class="form-group"><label class="col-sm-2 control-label">Type</label>
-<div class="col-sm-10"><input class="form-control" type="text"
-	name="type" placeholder="Type" required
-	title="What type of furniture it is?"></div>
-</div>
-
-<div class="form-group"><label class="col-sm-2 control-label">Color</label>
-<div class="col-sm-10"><input class="form-control" type="text"
-	name="color" placeholder="Color" required
-	title="Type the color of your furniture"></div>
-</div>
-
-<div class="form-group"><label class="col-sm-2 control-label">Price</label>
-<div class="col-sm-10"><input class="form-control" type="text"
-	name="price" placeholder="Price" required
-	title="Price cannot be left empty"></div>
-</div>
-
-<div class="form-group"><label class="col-sm-2 control-label"></label>
-<div class="col-sm-10">
-<button type="submit" class="btn btn-primary" name="insert">Add <span
-	class="glyphicon glyphicon-plus"></span></button>
-</div>
-</div>
-</form>
-<br />
-<div class="row">
-
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>ID#</th>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Color</th>
-			<th style="text-align: right;">Price</th>
-			<th>Edit</th>
-			<th>Delete</th>
-		</tr>
-	</thead>
-	<tbody>
-	<?php foreach($furnitures as $row) {
-		?>
-		<tr>
-			<td><?php echo $row->id ?></td>
-			<td><?php echo $row->name ?></td>
-			<td><?php echo $row->type ?></td>
-			<td><?php echo $row->color ?></td>
-			<td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
-			<td style="width: 25px; text-align: center;"><a
-				href="edit.php?id=<?php echo $row->id; ?>">
-
-			<button class="btn btn-primary btn-xs"><span
-				class="glyphicon glyphicon-pencil"></span></button>
-
-			</a></td>
-			<td style="width: 25px; text-align: center;"><a
-				href="add.php?action=delete&id=<?php echo $row->id; ?>"
-				onclick="return confirm('Are you sure, you want to delete it?')">
-
-			<button class="btn btn-danger btn-xs"
-				style="color: #fff; background-color: #d9534f; border-color: #d43f3a;">
-			<span class="glyphicon glyphicon-trash"></span></button>
-
-			</a></td>
-
-		</tr>
-		<?php
-	}
-	?>
-	</tbody>
-</table>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<!-- /.container -->
-
-<div class="container">
-
-<hr>
-
-<!-- Footer --> <footer>
-<div class="row">
-<div class="col-lg-12">
-<p>Copyright &copy; Inventory Management System 2016</p>
-</div>
-</div>
-</footer></div>
-<!-- /.container -->
-
-<!-- jQuery -->
-
-
+		</footer>
+</div> <!-- end of footer container -->
 </body>
-
 </html>
