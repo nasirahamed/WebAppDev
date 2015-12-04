@@ -41,7 +41,9 @@ if(isset($_POST['insert'])){
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
 				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
-			</head>
+                <script type="text/javascript" src="js/search.js"></script> <!-- Ajax Search -->
+                <style type="text/css" src="css/search.css"></style> <!-- Search Form Style Sheet -->
+            </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -132,13 +134,11 @@ if(isset($_POST['insert'])){
                     </div>
             </form>
             <br />
-                <div class="row"></div>
+                <div class="row">
+                </div>
             </div>
-
         </div>
-
     </div>
-    <!-- /.container -->
 <div class="container"> <!-- start footer container -->
 	<hr>
 		<footer> <!-- Footer Started -->
@@ -150,4 +150,5 @@ if(isset($_POST['insert'])){
 		</footer>
 </div> <!-- end of footer container -->
 </body>
+
 </html>

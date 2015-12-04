@@ -24,7 +24,7 @@ $furnitures = $arr->furniture;
 <!DOCTYPE html>
 <html lang="en">
 			<head>
-				<title>Remove Furniture</title>
+				<title>Search Furniture</title>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,9 @@ $furnitures = $arr->furniture;
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
 				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
-			</head>
+                <script type="text/javascript" src="js/search.js"></script> <!-- Ajax Search -->
+                <style type="text/css" src="css/search.css"></style> <!-- Search Form Style Sheet -->
+            </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -80,13 +82,9 @@ $furnitures = $arr->furniture;
                 </div>
             </div>
 
-            <div class="col-md-9">
-
-           
+        <div class="col-md-9">
             <form class="form-horizontal" role="form" method="POST" action="remove.php" onsubmit="return(login())">
             <p class="lead">Remove Furniture by ID#</p>
-            
-            
             <div class="form-group">
                     <!-- <label class="col-sm-2 control-label">Furniture ID#</label> -->
                         <div class="col-sm-6">
@@ -99,11 +97,10 @@ $furnitures = $arr->furniture;
                     <label class="col-sm-6 control-label"></label>
                         <div class="col-sm-10">
                             <button type = "submit" class="btn btn-danger" name="insert">Remove
-                            <span class=" glyphicon glyphicon-remove-sign"></span>
+                            <span class="glyphicon glyphicon-minus-sign"></span>
                             </button>
                         </div>
             </div>            
-
             </form>
             
             <div class="row">
@@ -132,15 +129,10 @@ $furnitures = $arr->furniture;
                             ?>
                         </tbody>
                     </table>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-    <!-- /.container -->
 <div class="container"> <!-- start footer container -->
 	<hr>
 		<footer> <!-- Footer Started -->

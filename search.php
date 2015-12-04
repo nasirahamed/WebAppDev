@@ -79,7 +79,6 @@
             </div>
         </div>
     </div> <!-- /.container ends -->
-            
 <div class="container"> <!-- start footer container -->
 	<hr>
 		<footer> <!-- Footer Started -->

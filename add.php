@@ -157,7 +157,7 @@ $furnitures = $arr->furniture;
 						<div class="form-group">
 							<label class="col-sm-2 control-label"></label>
 								<div class="col-sm-10">
-									<button type="submit" class="btn btn-primary" name="insert">Add <span class="glyphicon glyphicon-plus"></span></button>
+									<button type="submit" class="btn btn-primary" name="insert">Add <span class="glyphicon glyphicon-plus-sign"></span></button>
 								</div>
 						</div>
 			</form>
