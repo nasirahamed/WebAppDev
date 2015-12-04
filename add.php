@@ -93,7 +93,7 @@ $furnitures = $arr->furniture;
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 			</button>
-				<a class="navbar-brand" href="index.php">IMS</a>
+				<a class="navbar-brand" href="index.php">Inventory Management System</a>
 			</div>
 		
 			<!-- Collect the nav links, forms, and other content for toggling -->
