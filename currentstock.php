@@ -12,7 +12,7 @@ $furnitures = $arr->furniture;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Inventory Management System</title>
+    <title>Contact Us</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

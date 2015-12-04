@@ -30,7 +30,7 @@ $furnitures = $arr->furniture;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Inventory Management System</title>
+    <title>Delete Inventory</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
