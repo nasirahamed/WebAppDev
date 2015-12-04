@@ -94,7 +94,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-9">
-                        <p>Apps created by Nasir!</p>
+                        <!-- <p>Apps designed by Nasir and Turbo!</p> -->
                     </div>
                 </div>
             </div>
