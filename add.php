@@ -64,23 +64,28 @@ $furnitures = $arr->furniture;
 <!DOCTYPE html>
 <html lang="en">
 			<head>
+				<title>Add Furniture</title>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<meta name="description" content="">
-				<meta name="author" content="">
-				<title>Add Furniture</title>
-				
-				<!-- Bootstrap Core CSS -->
-				<link href="css/bootstrap.min.css" rel="stylesheet">
+				<meta name="author" content="inventory, inventory, furniture, IMS">
 				
 				<!-- Custom CSS -->
 				<link href="css/custom.css" rel="stylesheet">
 				
-				<script src="js/jquery.js"></script>
+				<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+				<!-- Optional theme -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 				
-				<!-- Bootstrap Core JavaScript -->
-				<script src="js/bootstrap.min.js"></script>
+				<!-- Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+				
+				
+				<!-- Latest jQuery library -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			</head>
 <body>
 <!-- Navigation -->
@@ -103,8 +108,10 @@ $furnitures = $arr->furniture;
 					</ul>
 			</div>
 		<!-- /.navbar-collapse -->
+			
 		</div>
 		<!-- /.container -->
+		
 	</nav>
 
 <!-- Page Content -->
