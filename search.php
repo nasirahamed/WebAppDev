@@ -15,7 +15,7 @@
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
 				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
                 <script type="text/javascript" src="js/search.js"></script> <!-- Ajax Search -->
-                <style type="text/css" src="css/search.css"></style> <!-- Form Style Sheet -->
+                <style type="text/css" src="css/search.css"></style> <!-- Search Form Style Sheet -->
             </head>
 <body>
     <!-- Navigation -->
@@ -80,7 +80,6 @@
         </div>
     </div> <!-- /.container ends -->
             
-
 <div class="container"> <!-- start footer container -->
 	<hr>
 		<footer> <!-- Footer Started -->
