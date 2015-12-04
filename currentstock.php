@@ -63,6 +63,7 @@ $furnitures = $arr->furniture;
             </div>
 
             <div class="col-md-9">
+                <p class="lead" style="margin-left: -10px;">Current Stock</p>
                 <div class="row">
                     <table class="table table-striped">
                         <thead>
