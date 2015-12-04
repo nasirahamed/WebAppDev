@@ -149,6 +149,22 @@ if(isset($_POST['insert'])){
 			</div>
 		</footer>
 </div> <!-- end of footer container -->
+<script type="text/javascript">
+    // Prevent accidental navigation away starts
+    setConfirmUnload(true);
+    function setConfirmUnload(on)
+    {
+        window.onbeforeunload = on ? unloadMessage : null;
+    }
+    function unloadMessage()
+    {
+        return 'Are you sure, you do not want edit Furniture';
+    }
+    $(document).on('click', 'button:submit',function(){
+        setConfirmUnload(false);
+    });
+    // Prevent accidental navigation away ends
+</script>
 </body>
 
 </html>
