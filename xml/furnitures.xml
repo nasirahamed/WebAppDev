@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
-    <furniture>
-        <id>1006</id>
-        <name>Darak Wood</name>
-        <type>Cubboard</type>
-        <color>Brown test</color>
-        <price>1109</price>
-    </furniture>
+    
     <furniture>
         <id>1003</id>
         <name>Large Cubboard Office</name>
@@ -14,13 +8,7 @@
         <color>Brown</color>
         <price>12509</price>
     </furniture>
-    <furniture>
-        <id>1006</id>
-        <name>Darakeli</name>
-        <type>Wood Frame</type>
-        <color>Wood</color>
-        <price>450</price>
-    </furniture>
+    
     <furniture>
         <id>8798</id>
         <name>Darakep</name>
@@ -56,4 +44,4 @@
         <color>Silver</color>
         <price>99</price>
     </furniture>
-</furnitures>
+<furniture><id>1328</id><name>King Bed</name><type>Bed</type><color>Wood Light</color><price>5000</price></furniture><furniture><id>674749</id><name>Farluki</name><type>Chair</type><color>Brown</color><price>89</price></furniture></furnitures>

@@ -1,7 +1,8 @@
+<?php require_once 'templates/header.php';?>
 <!DOCTYPE html>
 <html lang="en">
 			<head>
-				<title>Contact Us</title>
+				<title>Send Message</title>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +34,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="contactus.php">Contact Us</a>
+                        <a href="account.php">My Account</a>
+                    </li>
+                    
+                    <li>
+                        <a href="changepassword.php">Change Password</a>
+                    </li>
+                    
+                    <li>
+                        <a href="message.php">Send Message</a>
+                    </li>
+                    
+                    <li>
+                        <a href="logout.php">Signout</a>
                     </li>
                 </ul>
             </div>
@@ -64,8 +77,7 @@
                     <div class="form-group">
                       <!-- <label for="Last Name"></label> -->
                       <input type="text" class="form-control" id="last" placeholder="Last Name" required title="Last Name cannot be empty">
-                    </div>
-                    
+                    </div>  
                     <div class="form-group">
                         <!-- <label for="Your Message"></label> -->
                         <textarea class="form-control" rows="8" id="comment" placeholder="Your Message" required title="Message cannot be empty"></textarea>

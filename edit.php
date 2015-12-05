@@ -1,3 +1,4 @@
+<?php require_once 'templates/header.php';?>
 <?php
 require 'simplexml.class.php';
 $furnitures = simplexml_load_file('xml/furnitures.xml');

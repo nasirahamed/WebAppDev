@@ -1,115 +1,133 @@
+<?php 
+ob_start();
+session_start();
+require_once 'config.php'; 
+?>
+<?php 
+	if( !empty( $_POST )){
+		try {
+			$user_obj = new Cl_User();
+			$data = $user_obj->login( $_POST );
+			if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']){
+				$_SESSION['success'] = 'Logged In Successfully!';
+				header('Location: home.php');exit;
+			}
+		} catch (Exception $e) {
+			$error = $e->getMessage();
+			$_SESSION['error'] = $error;
+		}
+	}
+	//print_r($_SESSION);
+	if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']){
+		header('Location: home.php');exit;
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="description" content="">
-            <meta name="author" content="">
-            <title>Welcome to IMS!</title>
-        	<meta charset="utf-8">
-        	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        	<meta name="viewport" content="width=device-width, initial-scale=1">
-        	<meta name="description" content="">
-        	<meta name="author" content="inventory, inventory, furniture, IMS">
-        	<link href="css/custom.css" rel="stylesheet"> <!-- Custom CSS -->
-        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
-        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> <!-- Optional theme -->
-        	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Latest compiled and minified JavaScript -->
-        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
-        	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
-        	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
-            <link href="css/bootstrap.min.css" rel="stylesheet">
-            <link href="css/custom.css" rel="stylesheet">
-            <script src="js/jquery.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-        </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">Inventory Management System</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="contactus.php">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <title>IMS Login</title>
+	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
+  </head>
+  <body oncopy="return false;" onpaste="return false;" oncut="return false;">
+	<div class="container">
 
-    <!-- Page Content -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="list-group">
-                    <a href="add.php" class="list-group-item">Add Furniture</a>
-                    <a href="remove.php" class="list-group-item">Remove Furniture by ID</a>
-                    <a href="search.php" class="list-group-item">Search Furniture</a>
-                    <a href="currentstock.php" class="list-group-item">Current Stock</a>
-                </div>
-            </div>
+		<div class="login-form">
+			<?php require_once 'templates/message.php';?>
 
-            <div class="col-md-9">
-                <div class="row carousel-holder">
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="img/1.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="img/2.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="img/3.jpg" alt="">
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-9">
-                        <!-- <p>Apps designed by Nasir and Turbo!</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-<div class="container"> <!-- start footer container -->
-	<hr>
-		<footer> <!-- Footer Started -->
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Inventory Management System 2016</p>
+			<div class="form-header">
+				<i class="fa fa-user"></i>
+			</div>
+			<form id="login-form" method="post" class="form-signin" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+				<input name="email" id="email" type="email" class="form-control" placeholder="Email address" autofocus> 
+				<input name="password" id="password" type="password" class="form-control disable" placeholder="Password"> 
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			</form>
+			<div class="form-footer">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6">	
+						<i class="fa fa-lock"></i>
+						<a href="forget_password.php"> Forgot password? </a>
+					
+					</div>
+					
+					<div class="col-xs-6 col-sm-6 col-md-6">
+						<i class="fa fa-check"></i>
+						<a href="register.php"> Sign Up </a>
+					</div>
 				</div>
 			</div>
-		</footer>
-</div> <!-- end of footer container -->
-</body>
+			<br/>
+			<!-- 
+			<div class="text-center well">
+				<b>Demo ID/Password:</b> info@nasir.com/123
+			</div>
+			-->
+
+		</div>
+	</div>
+	
+	
+	<script>
+	
+   $('document').ready(function(){
+       $("#mailForm").validate({
+			     rules: {
+					name: {
+					   required: true,
+					   minlength : 3,
+					   remote: "ajax_unique.php?data=name"
+					},
+					email:{ 
+					   required: true,
+					   email: true,
+					   remote: "ajax_unique.php?data=email"
+					}
+			     },
+			     messages: {
+						name: {
+						   required:"Please enter your name",
+						   minlength: "Please enter a minimun 3 chars",
+						   remote: "Username is already exists"
+						},
+						email:{ 
+						   required: "Please enter your email",
+						   email: "Please enter a valid email address",
+						   remote: "Email is already exists"
+						}
+			     },
+				 debug: true,
+				 errorElement: "em",
+				 errorContainer: $("#warning, #summary"),
+				 errorPlacement: function(error, element) {
+					error.appendTo( element.parent("td").next("td") );
+				 },
+				 success: function(label) {
+					label.text("ok!").addClass("success");
+				 }	
+		});		 
+   });
+</script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
 </html>
+<?php ob_end_flush(); ?>
+<?php unset($_SESSION['success'] ); unset($_SESSION['error']);  ?>    

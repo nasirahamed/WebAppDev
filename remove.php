@@ -1,3 +1,4 @@
+<?php require_once 'templates/header.php';?>
 <?php 
 if (isset($_POST['insert']))
 {
@@ -24,7 +25,7 @@ $furnitures = $arr->furniture;
 <!DOCTYPE html>
 <html lang="en">
 			<head>
-				<title>Search Furniture</title>
+				<title>Remove Furniture</title>
 				<meta charset="utf-8">
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,8 +58,20 @@ $furnitures = $arr->furniture;
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                     <li>
+                        <a href="account.php">My Account</a>
+                    </li>
+                    
                     <li>
-                        <a href="contactus.php">Contact Us</a>
+                        <a href="changepassword.php">Change Password</a>
+                    </li>
+                    
+                    <li>
+                        <a href="message.php">Send Message</a>
+                    </li>
+                    
+                    <li>
+                        <a href="logout.php">Signout</a>
                     </li>
                 </ul>
             </div>
