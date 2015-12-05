@@ -46,7 +46,7 @@
                     </li>
                     
                     <li>
-                        <a href="logout.php">Signout</a>
+                        <a href="logout.php">Sign out</a>
                     </li>
                 </ul>
             </div>

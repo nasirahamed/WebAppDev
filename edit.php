@@ -62,8 +62,20 @@ if(isset($_POST['insert'])){
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                   <li>
+                        <a href="account.php">My Account</a>
+                    </li>
+                    
                     <li>
-                        <a href="contactus.php">Contact Us</a>
+                        <a href="changepassword.php">Change Password</a>
+                    </li>
+                    
+                    <li>
+                        <a href="message.php">Send Message</a>
+                    </li>
+                    
+                    <li>
+                        <a href="logout.php">Sign out</a>
                     </li>
                 </ul>
             </div>
