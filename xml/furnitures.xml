@@ -1,41 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <furnitures>
-    
+    <furniture>
+        <id>674749</id>
+        <name>Farluki</name>
+        <type>Chair</type>
+        <color>Brown</color>
+        <price>89090</price>
+    </furniture>
     <furniture>
         <id>1003</id>
-        <name>Large Cubboard Office</name>
-        <type>Bed</type>
-        <color>Brown</color>
-        <price>1</price>
-    </furniture>
-    
-    <furniture>
-        <id>8798</id>
-        <name>Darakep</name>
-        <type>Wood Piller</type>
-        <color>Wood Black</color>
-        <price>456</price>
+        <name>TES</name>
+        <type>TEST</type>
+        <color>Black</color>
+        <price>87</price>
     </furniture>
     <furniture>
-        <id>09090</id>
-        <name>Kiok</name>
-        <type>Chair Large</type>
-        <color>Blue</color>
+        <id>8898</id>
+        <name>uiuiuiui</name>
+        <type>Florin</type>
+        <color>blue</color>
+        <price>900</price>
+    </furniture>
+    <furniture>
+        <id>TXYZ 90</id>
+        <name>TLPCK</name>
+        <type>Table</type>
+        <color>Yellow</color>
         <price>100</price>
     </furniture>
-    
+
     <furniture>
-        <id>88787</id>
-        <name>Mehegoni</name>
-        <type>Wooden Piller</type>
-        <color>Blue</color>
-        <price>10</price>
+        <id>12322</id>
+        <name>dfsdfsd</name>
+        <type>dfdfd</type>
+        <color>fdasfds</color>
+        <price>16677798989</price>
     </furniture>
     <furniture>
-        <id>7801</id>
-        <name>Daratei LX</name>
-        <type>Chair</type>
-        <color>Silver</color>
-        <price>99</price>
+        <id>33333333</id>
+        <name>LOL</name>
+        <type>chair</type>
+        <color>uuuu</color>
+        <price>1</price>
     </furniture>
-<furniture><id>674749</id><name>Farluki</name><type>Chair</type><color>Brown</color><price>89</price></furniture><furniture><id>1003</id><name>TES</name><type>TEST</type><color>Black</color><price>87</price></furniture><furniture><id>8898</id><name>uiuiuiui</name><type>Florin</type><color>blue</color><price>900</price></furniture><furniture><id>TXYZ 90</id><name>TLPCK</name><type>Table</type><color>Yellow</color><price>100</price></furniture></furnitures>
+    <furniture>
+        <id>565656</id>
+        <name>Darelo</name>
+        <type>Mon</type>
+        <color>ioi</color>
+        <price>76767</price>
+    </furniture>
+    <furniture>
+        <id>32323</id>
+        <name>Niiii</name>
+        <type>uyuyu</type>
+        <color>bljlku</color>
+        <price>6464787</price>
+    </furniture>
+</furnitures>
