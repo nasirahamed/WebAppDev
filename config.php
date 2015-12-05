@@ -8,10 +8,10 @@ require_once 'messages.php';
 
 //site specific configuration declartion
 define( 'BASE_PATH', 'https://webappdev-nasirahamed-1.c9users.io');
-define( 'DB_HOST', 'nasirahamed-webappdev-2213413' );
-define( 'DB_USERNAME', 'nasirahamed@%');
+define( 'DB_HOST', getenv('172.17.11.172') );
+define( 'DB_USERNAME', 'nasirahamed');
 define( 'DB_PASSWORD', 'k4a8j2');
-define( 'DB_NAME', 'c9');
+define( 'DB_NAME', 'project');
 
 
 
