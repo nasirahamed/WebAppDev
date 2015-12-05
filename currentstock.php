@@ -21,7 +21,7 @@ $furnitures = $arr->furniture;
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
 				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
 			</head>
-<body>
+<body onload="displayResult()">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -76,35 +76,57 @@ $furnitures = $arr->furniture;
             </div>
 
             <div class="col-md-9">
-                <p class="lead" style="margin-left: -10px;">Current Stock</p>
-                <div class="row">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Color</th>
-                                <th style="text-align: right;">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach($furnitures as $row) {
-                            ?>
-                            <tr>
-                                <td><?php echo $row->id ?></td>
-                                <td><?php echo $row->name ?></td>
-                                <td><?php echo $row->type ?></td>
-                                <td><?php echo $row->color ?></td>
-                                <td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
-                            </tr>
-                            <?php
-                            }
-                            ?>
-                        </tbody>
-                    </table>
-                </div>
-
+                <p class="lead">Current Stock</p>
+                <!--I have commented this part of code to display the xml data directly from xml file-->
+                <!--where xsl apply directly to the xml file -->
+                <!--<div class="row">-->
+                <!--    <table class="table table-striped">-->
+                <!--        <thead>-->
+                <!--            <tr>-->
+                <!--                <th>ID</th>-->
+                <!--                <th>Name</th>-->
+                <!--                <th>Type</th>-->
+                <!--                <th>Color</th>-->
+                <!--                <th style="text-align: right;">Price</th>-->
+                <!--            </tr>-->
+                <!--        </thead>-->
+                <!--        <tbody>-->
+                <!--            <//?php foreach($furnitures as $row) {-->
+                <!--            ?>-->
+                <!--            <tr>-->
+                <!--                <td><//?php echo $row->id ?></td>-->
+                <!--                <td><//?php echo $row->name ?></td>-->
+                <!--                <td><//?php echo $row->type ?></td>-->
+                <!--                <td><//?php echo $row->color ?></td>-->
+                <!--                <td style="text-align: right;"><//?php echo '€'.$row->price.'.00' ?></td>-->
+                <!--            </tr>-->
+                <!--            <//?php-->
+                <!--            }-->
+                <!--            ?>-->
+                <!--        </tbody>-->
+                <!--    </table>-->
+                <!--</div>-->
+                
+                
+                <!--Code extracted from w3Schools.com-->
+                <!--Loading the XML file and at the same time applying the stylesheet-->
+                <?php
+                    // Load XML file
+                    $xml = new DOMDocument;
+                    $xml->load('xml/furnitures.xml');
+                    
+                    // Load XSL file
+                    $xsl = new DOMDocument;
+                    $xsl->load('xml/furnitures.xsl');
+                    
+                    // Configure the transformer
+                    $proc = new XSLTProcessor;
+                    
+                    // Attach the xsl rules
+                    $proc->importStyleSheet($xsl);
+                    
+                    echo $proc->transformToXML($xml);
+                    ?>
             </div>
 
         </div>
