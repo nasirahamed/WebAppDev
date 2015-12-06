@@ -1,6 +1,0 @@
-[19-Feb-2015 08:59:01 Asia/Kolkata] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/smarttut/public_html/demo_tut/php-quiz-code/Cl/DBclass.php on line 14
-[19-Feb-2015 08:59:01 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/smarttut/public_html/demo_tut/php-quiz-code/Cl/User.php on line 82
-[19-Feb-2015 08:59:01 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/smarttut/public_html/demo_tut/php-quiz-code/Cl/User.php on line 83
-[04-Dec-2015 20:31:40 UTC] PHP Fatal error:  Class 'Cl_User' not found in /home/theibbor/public_html/nasirahamed.com/webdev/add.php on line 3
-[04-Dec-2015 20:31:53 UTC] PHP Fatal error:  Class 'Cl_User' not found in /home/theibbor/public_html/nasirahamed.com/webdev/add.php on line 3
-[04-Dec-2015 20:32:06 UTC] PHP Fatal error:  Class 'Cl_User' not found in /home/theibbor/public_html/nasirahamed.com/webdev/add.php on line 3
