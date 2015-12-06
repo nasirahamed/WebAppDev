@@ -7,18 +7,12 @@
 
     
     
-    <furniture>
-        <id>565656</id>
-        <name>Darelo</name>
-        <type>Mon</type>
-        <color>ioi</color>
-        <price>8787</price>
-    </furniture>
+    
     <furniture>
         <id>32323</id>
-        <name>Niiii</name>
+        <name>adsfsdfNiiii</name>
         <type>uyuyu</type>
         <color>bljlku</color>
         <price>89</price>
     </furniture>
-<furniture><id>8787</id><name>Ollldkdk</name><type>jjjjjj</type><color>kkjkjkjk</color><price>65</price></furniture><furniture><id>8787</id><name>Kali</name><type>Chair</type><color>blue</color><price>4343</price></furniture></furnitures>
+<furniture><id>8787</id><name>Kali</name><type>Chair</type><color>blue</color><price>4343</price></furniture><furniture><id>1212</id><name>Test</name><type>Bed</type><color>Green</color><price>873847832324324</price></furniture></furnitures>
