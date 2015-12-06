@@ -67,7 +67,7 @@
                 </div>
             </div>
             
-            <div class="col-md-9">
+            <div class="col-md-6">
                   <form role="form" onsubmit="return(login())">
                     
                     <div class="form-group">
