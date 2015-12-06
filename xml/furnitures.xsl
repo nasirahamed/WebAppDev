@@ -5,11 +5,11 @@
   <body>
     <table style="border-collapse: collapse;width: 100%;border: 1px solid #ddd;text-align: left;">
       <tr style="background-color: #f2f2f2">
-        <th style="border: 1px solid #ddd;text-align: left; padding: 10px;">ID</th>
-        <th style="border: 1px solid #ddd;text-align: left; padding: 10px;">Name</th>
-        <th style="border: 1px solid #ddd;text-align: left; padding: 10px;">Type</th>
-        <th style="border: 1px solid #ddd;text-align: left; padding: 10px;">Color</th>
-        <th style="border: 1px solid #ddd;text-align: right; padding: 10px;">Price</th>
+        <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">ID</th>
+        <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Name</th>
+        <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Type</th>
+        <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Color</th>
+        <th style="border: 1px solid #ddd;text-align: right; padding: 7px;">Price</th>
       </tr>
 
       <xsl:for-each select="furnitures/furniture">
