@@ -91,23 +91,23 @@
                 <div class="form-row">
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" id="account-form" method="post" class="form-horizontal myaccount" role="form">
                             <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>Current password</label>
-                                <input name="old_password" id="old_password" type="text" class="form-control" autocomplete='off'>
+                                <!--<label class='control-label'>Current password</label> -->
+                                <input name="old_password" id="old_password" type="text" class="form-control" autocomplete='off' placeholder="Current Password">
                                 <span class="help-block"></span>
                                 
                             </div>
                         
                         
                             <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>New Password</label>
-                                <input name="password" id="password" type="text" class="form-control" autocomplete='off'>
+                                <!-- <label class='control-label'>New Password</label> -->
+                                <input name="password" id="password" type="text" class="form-control" autocomplete='off' placeholder="New Password">
                                 <span class="help-block"></span>
                                 
                             </div>
                         
                             <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>Confirm Password</label>
-                                <input name="confirm_password" id="confirm_password" type="text" class="form-control" autocomplete='off'>
+                                <!-- <label class='control-label'>Confirm Password</label> -->
+                                <input name="confirm_password" id="confirm_password" type="text" class="form-control" autocomplete='off' placeholder="Confirm Password">
                                 <span class="help-block"></span>
                             </div>
                         <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
