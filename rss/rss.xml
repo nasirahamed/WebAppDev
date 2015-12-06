@@ -6,145 +6,145 @@
   <link>http://www.amazon.com/</link>
   <description>Place where you can buy anything</description>
   
-  <item>
+  <item id="1">
     <title>Wayfair</title>
     <link>http://www.wayfair.com/</link>
     <description>Wayfair has one of the best furniture websites online because it’s super easy to search for exactly what you’re looking for.  Moreover, you can enter custom price ranges, which is a nice feature.  The furniture search results are almost always exact.  Another great feature Wayfair offers is called “Shop this Look” which is a huge database of professionally designed rooms with similar (and sometimes exact) product offerings depicted in the images.</description>
   </item>
   
-  <item>
+  <item id="2">
     <title>Hayneedle</title>
     <link>http://www.hayneedle.com/</link>
     <description>Hayneedle offers a wide range of furniture.  They are selective though and so they’re offerings are slimmer than Amazon.  What I like about Hayneedle is they offer “storyboards” which are room themes under which products are suggested.  Hayneedle is a great furniture website to browse around because they make the experience fun and effective.</description>
   </item>
   
-  <item>
+  <item id="3">
     <title>Modern Furniture Warehouse</title>
     <link>http://www.avantlink.com/</link>
     <description>Modern Furniture Warehouse is one of my favorite living room furniture online stores because it’s all modern design.  They sell ultra modern furniture that isn’t available elsewhere.  If you’re in the market for modern furniture, you definitely want to check this online store out.</description>
   </item>  
 
-  <item>
+  <item id="4">
     <title>Ebay</title>
     <link>http://www.ebay.com/</link>
     <description>Ebay is a great place to look for furniture, especially if you’re open to used items.  That said, many online furniture retailers list new products on Ebay as well.  Ebay TIP:  When bidding for products, check the sold listings for the same item to see what it’s sold for in the past.  This gives you a good idea as to what you can reasonably expect to pay.</description>
   </item>  
   
-  <item>
+  <item id="5">
     <title>Dwell</title>
     <link>http://www.conversantmedia.com/legal/privacy</link>
     <description>You have to appreciate this name (at least I do).  I like it… short, punchy and on-point.  Dwell offers modern furniture and home décor products.  The selection is not huge, but what they do offers is in line with their focus on all things modern and minimalist.</description>
   </item>  
 
-  <item>
+  <item id="6">
     <title>All Modern</title>
     <link>https://www.allmodern.com</link>
     <description>All Modern is an online furniture store focusing on offering only modern furniture.  The offerings are for every room of the home.  You can find some great modern styles on this site.</description>
   </item>  
 
-  <item>
+  <item id="7">
     <title>LexMod</title>
     <link>http://www.lexmod.com/</link>
     <description>LexMod has a lot of fun and really promotes it’s “Deal of the Day” which is a heavily discounted furniture item.  It’s definitely worth checking out because you can save a lot of money.  The LexMod big picture is a website that focuses on selling modern furniture for every room of the home.</description>
   </item>  
 
-  <item>
+  <item id="8">
     <title>BurkeDecor</title>
     <link>http://www.burkedecor.com/</link>
     <description>BurkeDecor focuses on mid-century modern and European inspired furniture.  Much of their furniture is minimalist design, so if that’s the look you’re going for, visit BurkeDecor.  I like the style and furniture offered, but then I like minimalist design.</description>
   </item>  
 
-  <item>
+  <item id="9">
     <title>Cymax</title>
     <link>http://www.cymax.com/</link>
     <description>Cymax serves regular household customers as well as professional interior designers by offering bulk order arrangements.  Cymax has a separate “modern furniture” portal, but otherwise offers a wide array of furniture styles.</description>
   </item>  
 
-  <item>
+  <item id="10">
     <title>Laura Ashley</title>
     <link>http://www.lauraashley.com/</link>
     <description>Based in the UK, Laura Ashley primarily serves the European market.  The furniture styles are largely English.  Also, Laura Ashley is a clothing online retailer as well.</description>
   </item>  
 
-  <item>
+  <item id="11">
     <title>Carolina Rustica</title>
     <link>http://www.carolinarustica.com/</link>
     <description>Carolina Rustica started as a brick and mortar furniture store in North Carolina and over the years expaned on the web developing a premiere online furniture store focusing on furniture from North Carolina.  They feature many premium furniture brands.  The site is easy to navigate, offers plenty of great images and most importantly of all, has a great selection of furniture.</description>
   </item>  
 
-  <item>
+  <item id="12">
     <title>Joss and Main</title>
     <link>https://www.jossandmain.com/</link>
     <description>Joss and Main is a members-only website which really means giving them your email and joining their email newsletter in order to search their website.  Joss and Main is unique in that they curate what they call “events” which are brief showcasings of various home furnishings steeply discounted (up to 70% off).  Having to join is a small price to pay for big savings.</description>
   </item>  
 
-  <item>
+  <item id="13">
     <title>ARTeFac</title>
     <link>http://www.conversantmedia.com/</link>
     <description>ARTeFac is one of Canada’s leading suppliers of kitchen chairs, stools, leather dining chairs, leather club chairs, leather bar stools, leather ottomans and contemporary leather chairs.</description>
   </item>  
 
-  <item>
+  <item = "14">
     <title>MDG</title>
     <link>http://www.mdg.ca/</link>
     <description>MDG serves Canada only.  It’s a unique business model is they finance furniture that you buy directly through them.  Everyone is approved for financing.  Their furniture selection is quite good (along with a wide array of electronics).  If you require financing and reside in Canada, this is a great furniture and electronics store option for you.</description>
   </item>  
 
-  <item>
+  <item id="15">
     <title>One Kings Lane</title>
     <link>https://www.onekingslane.com/</link>
     <description>One Kings Lane requires you to join, which is free – you simply provide an email address.  One Kings lane focuses on vintage furnishings, decorations and home accessories.  The site curates offerings that fit in with their preferred vintage style.  If it’s vintage you like, check out One Kings Lane.</description>
   </item>  
 
-  <item>
+  <item id="16">
     <title>Bellacor</title>
     <link>http://www.bellacor.com/</link>
     <description>Bellacor is best known for their lighting fixtures, but expanded into a broad furniture store as well.</description>
   </item>  
 
-  <item>
+  <item id="17">
     <title>Modern Furniture for Home</title>
     <link>http://www.conversantmedia.com/</link>
     <description>Modern Furniture For Home has a wide variety of contemporary and modern designs, but they’ve expanded into more traditional furniture styles as well such as the Jessica McClintock collection.</description>
   </item>  
 
-  <item>
+  <item id="18">
     <title>Online Amish Furniture</title>
     <link>http://www.onlineamishfurniture.com/</link>
     <description>As the name suggests, this website focuses on selling Amish style furniture – “straight lines… legs and posts are square.  Drawer fronts are plain… Hardware is plain wood… Mouldings flat.  Generally, a modern, clean look.</description>
   </item>  
 
-  <item>
+  <item id="19">
     <title>Design Within Reach</title>
     <link>http://www.designfurnishings.com/</link>
     <description>Design Within Reach offers contemporary and modern furniture designs for the most part.  For example, their sofa offerings are incredible within the contemporary style – many to choose from if modern is the look you’re going for.</description>
   </item>  
 
-  <item>
+  <item id="20">
     <title>TSC Furniture</title>
     <link>http://www.tscfurniture.com/</link>
     <description>TSC Furniture sells a wide array of furniture, much of it a traditional design.  Brands include Abbyson Living, Hillsdale, Flash Furniture, Tempo, American Heritage and more.</description>
   </item>
 
-  <item>
+  <item id="21">
     <title>Design Furnishings</title>
     <link>http://www.designfurnishings.com/</link>
     <description>I love this website because it offers some of the best patio and outdoor furniture on the planet.  Just visit their website and you’ll be transfixed by the amazing patio furniture they offer.  Patio and outdoor furniture is their specialty.</description>
   </item> 
 
-  <item>
+  <item id="22">
     <title>Wholesale furniture Brokers</title>
     <link>http://www.gowfb.ca/</link>
     <description>As the name suggests, Wholesale Furniture Brokers sells furniture wholesale so you save money.  They have many brick and mortar stores, but their online store is quite good… easy to navigate and offers a huge selection of furniture for every room of your home.</description>
   </item> 
 
-  <item>
+  <item id="23">
     <title>Fifthroom</title>
     <link>http://www.fifthroom.com/</link>
     <description>Fifthroom is your source for outdoor spaces – selling gazebos, pavilions, pergolas, patio furniture, garden bridges, benches and more.</description>
   </item> 
 
-  <item>
+  <item id="24">
     <title>Target Furniture</title>
     <link>http://www.pepperjamnetwork.com/</link>
     <description>I like Target.  It’s my favorite budget-friendly big box retailer for clothing and inexpensive furniture.  If you’re on a budget (for anything) Target offers low-cost furniture that actually looks good.</description>
