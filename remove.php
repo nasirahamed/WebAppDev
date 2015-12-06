@@ -1,4 +1,26 @@
 <?php require_once 'templates/header.php';?>
+<?php
+//Inline delete starts here
+//Code extracted and modified from https://www.youtube.com/watch?v=z_m33GhTecA
+require 'simplexml.class.php';
+if (isset($_GET['action'])) {
+	$furnitures = simplexml_load_file('xml/furnitures.xml');
+	$id = $_GET['id'];
+	$index = 0;
+	$i = 0;
+	foreach ($furnitures->furniture as $furniture) {
+		if($furniture->id==$id) {
+			$index = $i;
+			break;
+		}
+		$i++;
+	}
+	unset($furnitures->furniture[$index]);
+	file_put_contents('xml/furnitures.xml', $furnitures->asXML());
+}
+$furnitures = simplexml_load_file('xml/furnitures.xml');
+//In line delete ends here
+?>
 <?php 
 if (isset($_POST['insert']))
 {
@@ -118,31 +140,46 @@ $furnitures = $arr->furniture;
             </form>
             
             <div class="row">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Color</th>
-                                <th style="text-align: right;">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach($furnitures as $row) {
-                            ?>
-                            <tr>
-                                <td><?php echo $row->id ?></td>
-                                <td><?php echo $row->name ?></td>
-                                <td><?php echo $row->type ?></td>
-                                <td><?php echo $row->color ?></td>
-                                <td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
-                            </tr>
-                            <?php
-                            }
-                            ?>
-                        </tbody>
-                    </table>
+                 
+                 	<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>ID#</th>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Color</th>
+									<th style="text-align: right;">Price</th>
+									<th>Delete</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+									<?php foreach($furnitures as $row) {
+									?>
+										<tr>
+											<td><?php echo $row->id ?></td>
+											<td><?php echo $row->name ?></td>
+											<td><?php echo $row->type ?></td>
+											<td><?php echo $row->color ?></td>
+											<td style="text-align: right;"><?php echo '€'.$row->price.'.00' ?></td>
+											
+											
+											
+											<td style="width: 25px; text-align: center;">
+												<a href="remove.php?action=delete&id=<?php echo $row->id; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+												<button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;">
+													<span class="glyphicon glyphicon-trash"></span>
+												</button>
+												</a>
+											</td>
+										</tr>
+										<?php
+									}
+									?>
+							</tbody>
+					</table>
+                 
+                 
                 </div>
             </div>
         </div>

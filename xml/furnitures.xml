@@ -2,35 +2,11 @@
 <furnitures>
     
     
-    <furniture>
-        <id>8898</id>
-        <name>uiuiuiui</name>
-        <type>Florin</type>
-        <color>blue</color>
-        <price>900</price>
-    </furniture>
-    <furniture>
-        <id>TXYZ 90</id>
-        <name>TLPCK</name>
-        <type>Table</type>
-        <color>Yellow</color>
-        <price>100</price>
-    </furniture>
+    
+    
 
-    <furniture>
-        <id>12322</id>
-        <name>dfsdfsd</name>
-        <type>dfdfd</type>
-        <color>fdasfds</color>
-        <price>90</price>
-    </furniture>
-    <furniture>
-        <id>33333333</id>
-        <name>LOL</name>
-        <type>chair</type>
-        <color>uuuu</color>
-        <price>1</price>
-    </furniture>
+    
+    
     <furniture>
         <id>565656</id>
         <name>Darelo</name>
