@@ -99,6 +99,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Inventory Management System 2016</p>
+                    <p>designed by Nasir</p>
                 </div>
             </div>
         </footer>
