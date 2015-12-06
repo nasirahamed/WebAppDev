@@ -87,44 +87,40 @@
                     <a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/rss.gif" width="36" height="14"></a>
                 </div>
             </div>
-
-            <div class="col-md-9">
+            <div class="col-md-5">
+                <div class="form-row">
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" id="account-form" method="post" class="form-horizontal myaccount" role="form">
-                        <div class="form-group">
-                            <span for="inputPassword3" class="col-sm-3 control-span">Current Password</span>
-                            <div class="col-sm-6">
-                                <input name="old_password" id="old_password" type="text" class="form-control">
+                            <div class='col-xs-12 form-group required'>
+                                <label class='control-label'>Current password</label>
+                                <input name="old_password" id="old_password" type="text" class="form-control" autocomplete='off'>
                                 <span class="help-block"></span>
+                                
                             </div>
-                        </div>
                         
-                        <div class="form-group">
-                            <span for="inputPassword3" class="col-sm-3 control-span"> New Password</span>
-                            <div class="col-sm-6">
-                                <input name="password" id="password" type="text" class="form-control">
+                        
+                            <div class='col-xs-12 form-group required'>
+                                <label class='control-label'>New Password</label>
+                                <input name="password" id="password" type="text" class="form-control" autocomplete='off'>
+                                <span class="help-block"></span>
+                                
+                            </div>
+                        
+                            <div class='col-xs-12 form-group required'>
+                                <label class='control-label'>Confirm Password</label>
+                                <input name="confirm_password" id="confirm_password" type="text" class="form-control" autocomplete='off'>
                                 <span class="help-block"></span>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <span for="inputPassword3" class="col-sm-3 control-span"> Confirm Password</span>
-                            <div class="col-sm-6">
-                                <input name="confirm_password" id="confirm_password" type="text" class="form-control">
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
                         <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
                         <input type="hidden" id="email" value="<?php echo $_SESSION['email']; ?>" class="form-control"/>
                         
-                        
                         <div class="form-group">
-                            <div class="col-sm-offset-3 col-sm-8">
+                            <div class="col-xs-12">
                                 <button type="submit" class="btn btn-primary">Change Password</button>
                             </div>
                         </div>
-                    </form>
-            </div>
+                        </form>
+                    </div>
         </div>
-
     </div>
 <div class="container"> <!-- start footer container -->
     <hr>
