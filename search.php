@@ -11,10 +11,10 @@
 				<link href="css/custom.css" rel="stylesheet"> <!-- Custom CSS -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> <!-- Optional theme -->
+				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Latest compiled and minified JavaScript -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
-				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
                 <script type="text/javascript" src="js/search.js"></script> <!-- Ajax Search -->
                 <style type="text/css" src="css/search.css"></style> <!-- Search Form Style Sheet -->
             </head>
@@ -69,7 +69,7 @@
                     <a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/rss.gif" width="36" height="14"></a>
                 </div>
             </div>
-
+        <div class="col-md-9">
             <p class="lead">Search Furniture by Name</p>
             <div id="custom-search-input">
                 <div class="input-group col-md-6">
@@ -80,18 +80,10 @@
                         </button>
                     </span>
                 </div>
-            </div>
-            <div class="container">
-                <br>
-                <p id="result" class="text-success"></p>
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="row">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> <br />
+            <p id="result" class="text-success"></p>
         </div>
+
     </div> <!-- /.container ends -->
 <div class="container"> <!-- start footer container -->
 	<hr>

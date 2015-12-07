@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-<furniture><id>123456</id><name>Mehegoni</name><type>Chair</type><color>Blue</color><price>10</price></furniture></furnitures>
+    <furniture>
+        <id>8000</id>
+        <name>Alpha FX</name>
+        <type>Table</type>
+        <color>Wood</color>
+        <price>900</price>
+    </furniture>
+    <furniture>
+        <id>8001</id>
+        <name>Potter LM</name>
+        <type>Stand</type>
+        <color>Silver</color>
+        <price>850</price>
+    </furniture>
+</furnitures>

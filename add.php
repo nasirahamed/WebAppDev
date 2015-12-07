@@ -64,47 +64,24 @@ $furnitures = $arr->furniture;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-			<head>
-				<title>Add Furniture</title>
-				<meta charset="utf-8">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<meta name="description" content="">
-				<meta name="author" content="inventory, inventory, furniture, IMS">
-				<link href="css/custom.css" rel="stylesheet"> <!-- Custom CSS -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> <!-- Optional theme -->
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Latest compiled and minified JavaScript -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
-				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
-			
-	
-	<script type="text/javascript">
-	/*
-		$(document).ready(function () {
-		$('#success').click(function (e) {
-		  $('#message').html('<div class="alert alert-success fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>Inventory Added Successfully</div>');
-		});
-		
-		$('#info').click(function (e) {
-		 // e.preventDefault();
-		  $('#message').html('<div class="alert alert-info fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a info message</div>');
-		});
-		
-		$('#warning').click(function (e) {
-		  //e.preventDefault();
-		  $('#message').html('<div class="alert alert-warning fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a warning message</div>');
-		});
-		
-		$('#danger').click(function (e) {
-		  //e.preventDefault();
-		  $('#message').html('<div class="alert alert-danger fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a error message</div>');
-		});
-		});
-	*/
-</script>
-	</head>
+        <head>
+            <title>Add Furniture</title>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="IMS, Inventory Management System">
+        	<meta name="author" content="inventory, inventory, furniture, IMS">
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> <!-- Optional theme -->
+        	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
+            <link href="css/custom.css" rel="stylesheet"> <!-- Custom CSS -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Latest compiled and minified JavaScript -->
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
+        	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
+            <script src="js/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+        </head>
 <body>
 <!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

@@ -28,7 +28,7 @@ require_once 'config.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
-    <title>IMS Login</title>
+    <title>IMS Login!</title>
 	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
