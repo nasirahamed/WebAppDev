@@ -136,14 +136,15 @@ $furnitures = $arr->furniture;
     <!-- /.container -->
 <div class="container"> <!-- start footer container -->
 	<hr>
-		<footer> <!-- Footer Started -->
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Inventory Management System 2016</p>
-					<p>designed by Nasir</p>
-				</div>
-			</div>
-		</footer>
+<footer> <!-- Footer Started -->
+	<div class="row">
+		<div class="col-lg-12">
+		    <p><img src="img/ims_logo.jpg"></p>
+			<p>Copyright &copy; Inventory Management System 2016</p>
+			<p>designed by <strong>Nasir</strong> & <strong>Nuth</strong></p>
+		</div>
+	</div>
+</footer>
 </div> <!-- end of footer container -->
 </body>
 </html>

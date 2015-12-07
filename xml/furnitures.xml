@@ -7,48 +7,24 @@
         <color>bljlku</color>
         <price>89</price>
     </furniture>
-    <furniture>
-        <id>8787</id>
-        <name>Kali</name>
-        <type>Chair</type>
-        <color>blue</color>
-        <price>4343</price>
-    </furniture>
+    
     <furniture>
         <id>1212</id>
         <name>Test</name>
         <type>Bed</type>
         <color>Green</color>
-        <price>873847832324324</price>
+        <price>10</price>
     </furniture>
-    <furniture>
-        <id>8787</id>
-        <name>adfsd</name>
-        <type>Bed</type>
-        <color>Green</color>
-        <price>87</price>
-    </furniture>
+    
     <furniture>
         <id>afasdf</id>
         <name>dfjdk</name>
         <type>Bed</type>
         <color>Green</color>
-        <price>873847832324324</price>
+        <price>98</price>
     </furniture>
-    <furniture>
-        <id>8787</id>
-        <name>adfsd</name>
-        <type>Bed</type>
-        <color>Green balck</color>
-        <price>99999999</price>
-    </furniture>
-    <furniture>
-        <id>8787</id>
-        <name>Denis Balaj</name>
-        <type>srewr</type>
-        <color>Green balck</color>
-        <price>873847832324324</price>
-    </furniture>
+    
+    
     <furniture>
         <id>8787</id>
         <name>Test</name>
@@ -68,6 +44,6 @@
         <name>Chittagong</name>
         <type>City</type>
         <color>Blue</color>
-        <price>8900</price>
+        <price>12</price>
     </furniture>
-<furniture><id>88787</id><name>Mehegoni</name><type>Wooden Piller</type><color>Blue</color><price>78888</price></furniture></furnitures>
+<furniture><id>88787</id><name>Mehegoni</name><type>Wooden Piller</type><color>Blue</color><price>801</price></furniture><furniture><id>123456</id><name>Mehegoni</name><type>Chair</type><color>Blue</color><price>10</price></furniture></furnitures>
