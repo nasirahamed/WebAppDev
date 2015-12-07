@@ -78,7 +78,33 @@ $furnitures = $arr->furniture;
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Latest jQuery library -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- Latest jQuery UI library -->
 				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Latest jQuery Smoothness library -->
-			</head>
+			
+	
+	<script type="text/javascript">
+	/*
+		$(document).ready(function () {
+		$('#success').click(function (e) {
+		  $('#message').html('<div class="alert alert-success fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>Inventory Added Successfully</div>');
+		});
+		
+		$('#info').click(function (e) {
+		 // e.preventDefault();
+		  $('#message').html('<div class="alert alert-info fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a info message</div>');
+		});
+		
+		$('#warning').click(function (e) {
+		  //e.preventDefault();
+		  $('#message').html('<div class="alert alert-warning fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a warning message</div>');
+		});
+		
+		$('#danger').click(function (e) {
+		  //e.preventDefault();
+		  $('#message').html('<div class="alert alert-danger fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a error message</div>');
+		});
+		});
+	*/
+</script>
+	</head>
 <body>
 <!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -174,9 +200,10 @@ $furnitures = $arr->furniture;
 						<div class="form-group">
 							<label class="col-sm-2 control-label"></label>
 								<div class="col-sm-10">
-									<button type="submit" class="btn btn-primary" name="insert">Add <span class="glyphicon glyphicon-plus-sign"></span></button>
+									<button type="submit" id="success" class="btn btn-success" name="insert">Add <span class="glyphicon glyphicon-plus-sign"></span></button>
 								</div>
 						</div>
+						<div id="message"></div>
 			</form>
 	<br />
 				<div class="row">
