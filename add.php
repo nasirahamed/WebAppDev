@@ -134,7 +134,7 @@ $furnitures = $arr->furniture;
 				</div>
 			</div>
 	<div class="col-md-9"> <!-- Column 9 for the right part -->
-			<form class="form-horizontal" role="form" method="POST" action="add.php" onsubmit="return(login())">
+			<form class="form-horizontal" role="form" method="POST" action="add.php">
 					<p class="lead">Add Furniture</p> <!-- Add furniture title in the form -->
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Furniture#</label>
