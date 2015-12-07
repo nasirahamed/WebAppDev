@@ -9,7 +9,7 @@
         <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Name</th>
         <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Type</th>
         <th style="border: 1px solid #ddd;text-align: left; padding: 7px;">Color</th>
-        <th style="border: 1px solid #ddd;text-align: right; padding: 7px;">Price</th>
+        <th style="border: 1px solid #ddd;text-align: right; padding: 7px;">Price (€)</th>
       </tr>
 
       <xsl:for-each select="furnitures/furniture">
@@ -18,7 +18,7 @@
         <td style="border: 1px solid #ddd;text-align: left;padding: 7px;"><xsl:value-of select="name"/></td>
         <td style="border: 1px solid #ddd;text-align: left;padding: 7px;"><xsl:value-of select="type"/></td>
         <td style="border: 1px solid #ddd;text-align: left;padding: 7px;"><xsl:value-of select="color"/></td>
-        <td style="border: 1px solid #ddd;text-align: right;padding: 7px;"><xsl:value-of select="price"/></td>
+        <td style="border: 1px solid #ddd;text-align: right;padding: 7px;"><xsl:value-of select="price"/>.00</td>
       </tr>
       </xsl:for-each>
 
