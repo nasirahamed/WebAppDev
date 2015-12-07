@@ -1,49 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
-    <furniture>
-        <id>32323</id>
-        <name>adsfsdfNiiii</name>
-        <type>uyuyu</type>
-        <color>bljlku</color>
-        <price>89</price>
-    </furniture>
-    
-    <furniture>
-        <id>1212</id>
-        <name>Test</name>
-        <type>Bed</type>
-        <color>Green</color>
-        <price>10</price>
-    </furniture>
-    
-    <furniture>
-        <id>afasdf</id>
-        <name>dfjdk</name>
-        <type>Bed</type>
-        <color>Green</color>
-        <price>98</price>
-    </furniture>
     
     
-    <furniture>
-        <id>8787</id>
-        <name>Test</name>
-        <type>Bed</type>
-        <color>Green</color>
-        <price>33</price>
-    </furniture>
-    <furniture>
-        <id>898</id>
-        <name>Dhaka</name>
-        <type>Capital</type>
-        <color>Green</color>
-        <price>900</price>
-    </furniture>
-    <furniture>
-        <id>898000</id>
-        <name>Chittagong</name>
-        <type>City</type>
-        <color>Blue</color>
-        <price>12</price>
-    </furniture>
-<furniture><id>88787</id><name>Mehegoni</name><type>Wooden Piller</type><color>Blue</color><price>801</price></furniture><furniture><id>123456</id><name>Mehegoni</name><type>Chair</type><color>Blue</color><price>10</price></furniture></furnitures>
+    
+    
+    
+    
+    
+    
+    
+    
+<furniture><id>123456</id><name>Mehegoni</name><type>Chair</type><color>Blue</color><price>10</price></furniture></furnitures>
