@@ -130,10 +130,11 @@ $furnitures = $arr->furniture;
 			<div class="col-md-3"> <!-- Column 3 for the left bar-->
 				<div class="list-group">
 					<a href="add.php" class="list-group-item">Add Furniture</a>
-					<a href="remove.php" class="list-group-item">Remove Furniture by ID</a> 
-					<a href="search.php" class="list-group-item">Search Furniture</a> 
-					<a href="currentstock.php" class="list-group-item">Current Stock</a>
-					<a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/rss.gif" width="36" height="14"></a>
+                    <a href="remove.php" class="list-group-item">Remove Furniture by ID</a>
+                    <a href="search.php" class="list-group-item">Search Furniture</a>
+                    <a href="currentstock.php" class="list-group-item">Current Stock</a>
+                    <a href="rss_embedded.php" class="list-group-item">RSS Embedded</a>
+                    <a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/rss.gif" width="36" height="14"></a>
 				</div>
 			</div>
 	<div class="col-md-9"> <!-- Column 9 for the right part -->

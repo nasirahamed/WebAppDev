@@ -5,9 +5,9 @@
 	<head>
 		<link href="xsl.css" rel="stylesheet" type="text/css" />
 		<style type="text/css">
-			body {
+		<!--	body {
 				font-size:0.83em;
-			}
+			} -->
 		</style>
 	</head>
 	<body>
