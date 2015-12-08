@@ -78,10 +78,7 @@ require_once 'config.php';
 
 		</div>
 	</div>
-	
-	
 	<script>
-	
    $('document').ready(function(){
        $("#mailForm").validate({
 			     rules: {
