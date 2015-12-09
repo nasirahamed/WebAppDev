@@ -2,8 +2,9 @@
 <!-- Idea from w3schools.com -->
 <?xml-stylesheet type="text/xsl" href="rss.xsl" ?>
 	<?xml-stylesheet type="text/css" href="xsl.css" ?>
-		<rss version="2.0">
+		<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 			<channel>
+				<atom:link href="https://webappdev-nasirahamed-1.c9users.io/rss/rss.xml" rel="self" type="application/rss+xml" />
 				<title>Inventory Management System</title>
 				<link>https://webappdev-nasirahamed-1.c9users.io/home.php</link>
 				<description>The latest Furniture information from IMS!</description>
@@ -15,17 +16,19 @@
 				<item>
 					<title>Wayfair</title>
 					<description>Wayfair has one of the best furniture websites online because it super easy to search for exactly what you re looking for. Moreover, you can enter custom price ranges, which is a nice feature. The furniture search results are almost always exact.
-						Another great feature Wayfair offers is called “Shop this Look” which is a huge database of professionally designed rooms with similar (and sometimes exact) product offerings depicted in the images.</description>
+						Another great feature Wayfair offers is called Shop this Look which is a huge database of professionally designed rooms with similar (and sometimes exact) product offerings depicted in the images.</description>
 					<pubDate>Tue, 08 Dec 2015 00:00:00 GMT</pubDate>
 					<link>http://www.wayfair.com/</link>
+					<guid>http://www.wayfair.com/</guid>
 				</item>
 
 				<item>
 					<title>Hayneedle</title>
-					<description>Hayneedle offers a wide range of furniture. They are selective though and so they re offerings are slimmer than Amazon. What I like about Hayneedle is they offer “storyboards” which are room themes under which products are suggested. Hayneedle is
+					<description>Hayneedle offers a wide range of furniture. They are selective though and so they re offerings are slimmer than Amazon. What I like about Hayneedle is they offer storyboards which are room themes under which products are suggested. Hayneedle is
 						a great furniture website to browse around because they make the experience fun and effective.</description>
 					<pubDate>Tue, 08 Dec 2015 00:00:00 GMT</pubDate>
 					<link>http://www.hayneedle.com/</link>
+					<guid>http://www.hayneedle.com/</guid>
 				</item>
 
 				<item>
@@ -34,6 +37,7 @@
 						to check this online store out.</description>
 					<pubDate>Tue, 08 Dec 2015 00:00:00 GMT</pubDate>
 					<link>http://www.avantlink.com/</link>
+					<guid>http://www.avantlink.com/</guid>
 				</item>
 
 				<item>
@@ -41,15 +45,16 @@
 					<description>All Modern is an online furniture store focusing on offering only modern furniture. The offerings are for every room of the home. You can find some great modern styles on this site.</description>
 					<pubDate>Tue, 08 Dec 2015 00:00:00 GMT</pubDate>
 					<link>https://www.allmodern.com</link>
+					<guid>https://www.allmodern.com</guid>
 				</item>
 
 				<item>
 					<title>LexMod</title>
-					<description>LexMod has a lot of fun and really promotes it s “Deal of the Day” which is a heavily discounted furniture item. It s definitely worth checking out because you can save a lot of money. The LexMod big picture is a website that focuses on selling modern
+					<description>LexMod has a lot of fun and really promotes it is a deal of the Day which is a heavily discounted furniture item. It s definitely worth checking out because you can save a lot of money. The LexMod big picture is a website that focuses on selling modern
 						furniture for every room of the home.</description>
 					<pubDate>Tue, 08 Dec 2015 00:00:00 GMT</pubDate>
 					<link>http://www.lexmod.com/</link>
+					<guid>http://www.lexmod.com/</guid>
 				</item>
-
 			</channel>
 		</rss>
