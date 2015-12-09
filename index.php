@@ -71,7 +71,7 @@ require_once 'config.php';
 			</div>
 			<!--<div class="text-center well">-->
 			<div class="well">
-				<strong style="margin-left: 21px;">Demo ID:</strong> guest@guest.com <strong>|</strong> <strong>Password:</strong> 123
+				<strong>Demo ID:</strong> guest@guest.com <strong>|</strong> <strong>Demo Password:</strong> 123
 			</div>
 
 		</div>
