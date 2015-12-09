@@ -70,7 +70,7 @@ require_once 'config.php';
 				</div>
 			</div>
 			<!--<div class="text-center well">-->
-			<div class="well">
+			<div class="text-center well">
 				<strong>Demo ID:</strong> guest@guest.com <strong>|</strong> <strong>Demo Password:</strong> 123
 			</div>
 
