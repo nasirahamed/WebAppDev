@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?> <!-- Idea from w3schools.com -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Idea from w3schools.com -->
 <?xml-stylesheet type="text/xsl" href="rss.xsl" ?>
-<?xml-stylesheet type="text/css" href="xsl.css" ?>
-<rss version="2.0">
-	<channel>
-		<title>Inventory Management System</title>
-		<link>https://webappdev-nasirahamed-1.c9users.io/home.php</link>
-		<description>The latest Furniture information from IMS!</description>
-		<language>en-us</language>
-		<copyright>Copyright 2016 Inventory Management System</copyright>
-		<docs>https://webappdev-nasirahamed-1.c9users.io/rss/rss.xml/</docs>
-		<lastBuildDate>Tue, 08 Dec 2015 00:00:00 IST</lastBuildDate>
-		
-		<item>
-			<title>Wayfair</title> 
-      <description>Wayfair has one of the best furniture websites online because it super easy to search for exactly what you re looking for.  Moreover, you can enter custom price ranges, which is a nice feature.  The furniture search results are almost always exact.  Another great feature Wayfair offers is called “Shop this Look” which is a huge database of professionally designed rooms with similar (and sometimes exact) product offerings depicted in the images.</description>			
-			<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
-			<link>http://www.wayfair.com/</link>
-		</item>
-	
-		<item>
-			<title>Hayneedle</title> 
-			<description>Hayneedle offers a wide range of furniture.  They are selective though and so they re offerings are slimmer than Amazon.  What I like about Hayneedle is they offer “storyboards” which are room themes under which products are suggested.  Hayneedle is a great furniture website to browse around because they make the experience fun and effective.</description>
-			<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
-			<link>http://www.hayneedle.com/</link>
-		</item>
-	
-		<item>
-			<title>Modern Furniture Warehouse</title> 
-			<description>Modern Furniture Warehouse is one of my favorite living room furniture online stores because it s all modern design.  They sell ultra modern furniture that isn t available elsewhere.  If you re in the market for modern furniture, you definitely want to check this online store out.</description>
-			<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
-			<link>http://www.avantlink.com/</link>
-		</item>
-	
-		<item>
-			<title>All Modern</title> 
-			<description>All Modern is an online furniture store focusing on offering only modern furniture.  The offerings are for every room of the home.  You can find some great modern styles on this site.</description>
-			<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
-			<link>https://www.allmodern.com</link>
-		</item>
-	
-		<item>
-			<title>LexMod</title> 
-			<description>LexMod has a lot of fun and really promotes it s “Deal of the Day” which is a heavily discounted furniture item.  It s definitely worth checking out because you can save a lot of money.  The LexMod big picture is a website that focuses on selling modern furniture for every room of the home.</description>
-			<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
-			<link>http://www.lexmod.com/</link>
-		</item>
-	
-	</channel>
-</rss>
+	<?xml-stylesheet type="text/css" href="xsl.css" ?>
+		<rss version="2.0">
+			<channel>
+				<title>Inventory Management System</title>
+				<link>https://webappdev-nasirahamed-1.c9users.io/home.php</link>
+				<description>The latest Furniture information from IMS!</description>
+				<language>en-us</language>
+				<copyright>Copyright 2016 Inventory Management System</copyright>
+				<docs>https://webappdev-nasirahamed-1.c9users.io/rss/rss.xml/</docs>
+				<lastBuildDate>Tue, 08 Dec 2015 00:00:00 IST</lastBuildDate>
+
+				<item>
+					<title>Wayfair</title>
+					<description>Wayfair has one of the best furniture websites online because it super easy to search for exactly what you re looking for. Moreover, you can enter custom price ranges, which is a nice feature. The furniture search results are almost always exact.
+						Another great feature Wayfair offers is called “Shop this Look” which is a huge database of professionally designed rooms with similar (and sometimes exact) product offerings depicted in the images.</description>
+					<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
+					<link>http://www.wayfair.com/</link>
+				</item>
+
+				<item>
+					<title>Hayneedle</title>
+					<description>Hayneedle offers a wide range of furniture. They are selective though and so they re offerings are slimmer than Amazon. What I like about Hayneedle is they offer “storyboards” which are room themes under which products are suggested. Hayneedle is
+						a great furniture website to browse around because they make the experience fun and effective.</description>
+					<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
+					<link>http://www.hayneedle.com/</link>
+				</item>
+
+				<item>
+					<title>Modern Furniture Warehouse</title>
+					<description>Modern Furniture Warehouse is one of my favorite living room furniture online stores because it s all modern design. They sell ultra modern furniture that isn t available elsewhere. If you re in the market for modern furniture, you definitely want
+						to check this online store out.</description>
+					<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
+					<link>http://www.avantlink.com/</link>
+				</item>
+
+				<item>
+					<title>All Modern</title>
+					<description>All Modern is an online furniture store focusing on offering only modern furniture. The offerings are for every room of the home. You can find some great modern styles on this site.</description>
+					<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
+					<link>https://www.allmodern.com</link>
+				</item>
+
+				<item>
+					<title>LexMod</title>
+					<description>LexMod has a lot of fun and really promotes it s “Deal of the Day” which is a heavily discounted furniture item. It s definitely worth checking out because you can save a lot of money. The LexMod big picture is a website that focuses on selling modern
+						furniture for every room of the home.</description>
+					<pubDate>Tue, 08 Dec 2015 00:00:00 IST</pubDate>
+					<link>http://www.lexmod.com/</link>
+				</item>
+
+			</channel>
+		</rss>
