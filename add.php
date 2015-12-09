@@ -133,7 +133,7 @@ $furnitures = $arr->furniture;
                     <a href="remove.php" class="list-group-item">Remove Furniture by ID</a>
                     <a href="search.php" class="list-group-item">Search Furniture</a>
                     <a href="currentstock.php" class="list-group-item">Current Stock</a>
-                    <a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/rss.gif" width="36" height="14"></a>
+                    <a href="rss/rss.xml" class="list-group-item" target="_blank"><img src="img/valid-rss-rogers.png"></a>
 				</div>
 			</div>
 	<div class="col-md-9"> <!-- Column 9 for the right part -->
