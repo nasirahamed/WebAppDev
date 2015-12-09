@@ -69,12 +69,10 @@ require_once 'config.php';
 					</div>
 				</div>
 			</div>
-			<br/>
-			<!-- 
-			<div class="text-center well">
-				<b>Demo ID/Password:</b> info@nasir.com/123
+			<!--<div class="text-center well">-->
+			<div class="well">
+				<strong style="margin-left: 21px;">Demo ID:</strong> info@nasir.com | <strong>Password:</strong> 123
 			</div>
-			-->
 
 		</div>
 	</div>
