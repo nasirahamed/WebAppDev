@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <furnitures>
-    
-    
-<furniture><id>78787</id><name>Test</name><type>Chair</type><color>Green</color><price>77</price></furniture><furniture><id>565656</id><name>barkon</name><type>Bed</type><color>Brown</color><price>9000</price></furniture><furniture><id>565656</id><name>abc</name><type>Bed</type><color>Wood DEDDD</color><price>1</price></furniture></furnitures>
+    <furniture>
+        <id>78787</id>
+        <name>Test</name>
+        <type>Chair</type>
+        <color>Green</color>
+        <price>77</price>
+    </furniture>
+    <furniture>
+        <id>565656</id>
+        <name>barkon</name>
+        <type>Bed</type>
+        <color>Brown</color>
+        <price>9000</price>
+    </furniture>
+    <furniture>
+        <id>565656</id>
+        <name>abc</name>
+        <type>Bed</type>
+        <color>Wood DEDDD</color>
+        <price>1</price>
+    </furniture>
+</furnitures>
