@@ -54,7 +54,7 @@ if (isset($_POST['insert']))
 	$furnituresTag->appendChild($furnitureTag);
 	//Appending the all furniture tag inside furnitures(root) tag ends here
 
-	$xml->save('xml/furnitures.xml'); //Writing/Saving the content in the furnitures.xml file
+	$xml->save('xml/furnitures.xml'); //Saving the content in the furnitures.xml file
 }
 ?>
 <?php //loading the xml file content
@@ -180,7 +180,7 @@ $furnitures = $arr->furniture;
 									<button type="submit" id="success" class="btn btn-success" name="insert">Add <span class="glyphicon glyphicon-plus-sign"></span></button>
 								</div>
 						</div>
-						<div id="message"></div>
+						
 			</form>
 	<br />
 				<div class="row">
