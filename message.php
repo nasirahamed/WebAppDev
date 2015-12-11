@@ -103,30 +103,35 @@ $cusmessages = $arr->cusmessage;
                 </div>
             </div>
             
-            <div class="col-md-6">
-                  <form role="form" onsubmit="return(login())">
-                    
+            <div class="col-md-9">
+                  <form class="from-horizontal" role="form" methos="POST" action="message.php">
+                  <p class="lead">Add Comment</p>  
                     <div class="form-group">
-                      <!-- <label for="First Name"></label> -->
-                      <input type="text" class="form-control" id="first" placeholder="First Name" required title="First Name cannot be empty">
+                      <label class="col-sm-2 control-label">ID#</label>
+                      <div class="col-sm-10">
+                      <input class="form-control" type="text" name="id" placeholder="Enter ID" required title="Please enter ID">
+                      </div>
                     </div>
                     
                     <div class="form-group">
-                      <!-- <label for="Last Name"></label> -->
-                      <input type="text" class="form-control" id="last" placeholder="Last Name" required title="Last Name cannot be empty">
+                      <label class="col-sm-2 control-label">Full Name</label>
+                      <div class="col-sm-10">
+                      <input class="form-control" type="text" name="fullname" placeholder="Full Name" required title="Please enter your full name here">
+                      </div>
                     </div>  
                     <div class="form-group">
-                        <!-- <label for="Your Message"></label> -->
-                        <textarea class="form-control" rows="8" id="comment" placeholder="Your Message" required title="Message cannot be empty"></textarea>
+                        <label class="col-sm-2 control-label">Your Message</label>
+                        <textarea class="form-control" rows="8" name="comment" placeholder="Your Message" required title="Please enter your message here"></textarea>
+                  </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-sm-10">
+                    <button type="submit" id="success" class="btn btn-success" name="insert">Send <span class="glyphicon glyphicon-send"></span></button>
+                            </div>
                     </div>
-                    
-                    <button type = "submit" class="btn btn-primary" name="insert">Send
-                    <span class="glyphicon glyphicon-send"></span>
-                    </button>
+                  
                   </form>
-            </div>
-        </div>
-    </div>
+    <br />
     <!-- /.container -->
     <div class="container">
         <hr>
