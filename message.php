@@ -160,6 +160,24 @@ $cusmessages = $arr->cusmessage;
                                                 </button>
                                                 </a>
                                             </td>
+                                            
+                                            <td style="width: 25px; text-align: center;">
+                                                <a href="message.php?action=delete&id=<?php echo $row->id; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+                                                <button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>
+                            </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+</div> <!-- end container -->
     <!-- /.container -->
     <div class="container">
         <hr>
