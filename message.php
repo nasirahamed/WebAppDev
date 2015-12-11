@@ -1,4 +1,32 @@
 <?php require_once 'templates/header.php';?>
+<?php
+if (isset($_POST['insert']))
+{
+    $xml = new DomDocument("1.0","UTF-8");
+    $xml->load('xml/cusmessages.xml');
+
+    $id = $_POST['id']; 
+    $fullname = $_POST['fullname']; 
+    $comment = $_POST['comment']; 
+    
+    $cusmessagesTag = $xml->getElementsByTagName("cusmessages")->item(0);
+
+    $cusmessageTag = $xml->createElement("cusmessage");
+    $idTag = $xml->createElement("id", $id);
+    $fullnameTag = $xml->createElement("fullname", $fullname);
+    $commentTag = $xml->createElement("comment", $comment);
+
+    //Append child element in cusmessage element
+    $cusmessageTag->appendChild($idTag);
+    $cusmessageTag->appendChild($fullnameTag);
+    $cusmessageTag->appendChild($commentTag);
+
+    //Appending all information tag inside root tag
+    $cusmessagesTag->appendChild($cusmessageTag);
+
+    $xml->save('xml/cusmessages.xml'); // to save data information into xml >cusmessages.xml
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
         <head>
