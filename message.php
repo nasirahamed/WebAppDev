@@ -132,6 +132,26 @@ $cusmessages = $arr->cusmessage;
                   
                   </form>
     <br />
+    
+    <div class="row">
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID#</th>
+                                    <th>Name</th>
+                                    <th>Comment</th>
+
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <?php foreach($cusmessages as $row) {
+                                    ?>
+                                        <tr>
+                                            <td><?php echo $row->id ?></td>
+                                            <td><?php echo $row->fullname ?></td>
+                                            <td><?php echo $row->comment ?></td>
     <!-- /.container -->
     <div class="container">
         <hr>
