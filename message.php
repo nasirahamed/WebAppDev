@@ -27,6 +27,11 @@ if (isset($_POST['insert']))
     $xml->save('xml/cusmessages.xml'); // to save data information into xml >cusmessages.xml
 }
 ?>
+<?php //load the xml file content
+$get = file_get_contents('xml/cusmessages.xml');
+$arr = simplexml_load_string($get);
+$cusmessages = $arr->cusmessage;
+?>
 <!DOCTYPE html>
 <html lang="en">
         <head>
