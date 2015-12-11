@@ -152,6 +152,14 @@ $cusmessages = $arr->cusmessage;
                                             <td><?php echo $row->id ?></td>
                                             <td><?php echo $row->fullname ?></td>
                                             <td><?php echo $row->comment ?></td>
+                                            
+                                            <td style="width: 25px; text-align: center;">
+                                                <a href="<<php page>>>?id=<?php echo $row->id; ?>">
+                                                <button class="btn btn-primary btn-xs">
+                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                </button>
+                                                </a>
+                                            </td>
     <!-- /.container -->
     <div class="container">
         <hr>
