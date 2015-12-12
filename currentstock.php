@@ -80,7 +80,7 @@ $furnitures = $arr->furniture;
 
             <div class="col-md-9">
                 <p class="lead">Current Stock</p>
-                <!--I have commented this part of code to display the xml data directly from xml file-->
+                <!--I have commented this part of code in order to display the xml data directly from xml file by applying the XSLT-->
                 <!--where xsl apply directly to the xml file -->
                 <!--<div class="row">-->
                 <!--    <table class="table table-striped">-->
@@ -112,7 +112,7 @@ $furnitures = $arr->furniture;
                 
                 
                 <!--Code extracted from w3Schools.com-->
-                <!--Loading the XML file and at the same time applying the stylesheet-->
+                <!--Loading the XML file and at the same time applying the XSLT stylesheet-->
                 <?php
                     // Load XML file
                     $xml = new DOMDocument;

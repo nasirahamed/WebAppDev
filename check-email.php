@@ -1,4 +1,5 @@
 <?php
+//Code extracted from http://www.smarttutorials.net/ and altered
 require_once 'config.php';
 $db = new Cl_DBclass();
 if( isset( $_POST['password'] ) && !empty($_POST['password'])){

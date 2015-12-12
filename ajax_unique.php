@@ -1,4 +1,5 @@
 <?php
+//Code extracted from http://www.smarttutorials.net/ and altered
 require_once 'config.php';
 
 if($_GET['data']=='name'){

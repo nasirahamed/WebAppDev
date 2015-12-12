@@ -74,6 +74,7 @@
             <div id="custom-search-input">
                 <div class="input-group col-md-6">
                     <input id="test" type="text" class="search-query form-control" placeholder="Search" />
+                    <!-- for AJAX Search functionalities, I downloaded the code from http://jsfiddle.net/jensbits/PekQZ/light/ then altered-->
                     <span class="input-group-btn">
                         <button class="btn btn-danger" type="button">
                             <span class="glyphicon glyphicon-search"></span>

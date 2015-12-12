@@ -1,4 +1,16 @@
 <?php require_once 'templates/header.php';?>
+<?php
+//Code extracted from http://www.smarttutorials.net/ and altered
+	if( !empty( $_POST )){
+		try {
+			$user_obj = new Cl_User();
+			$data = $user_obj->account( $_POST );
+			if($data)$_SESSION['success'] = PASSOWRD_CHANAGE_SUCCESS;
+		} catch (Exception $e) {
+			$_SESSION['error'] = $e->getMessage();
+		} 
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
         <head>

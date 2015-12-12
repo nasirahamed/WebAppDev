@@ -1,6 +1,6 @@
 <?php require_once 'templates/header.php';?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Bootstrap template idea from http://bootsnipp.com/ -->
         <head>
             <title>Welcome to IMS!</title>
             <meta charset="utf-8">

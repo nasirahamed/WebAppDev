@@ -1,4 +1,5 @@
 <?php
+//Code extracted from http://www.smarttutorials.net/ and left as is
 ob_start();
 session_start();
 require_once 'config.php'; 

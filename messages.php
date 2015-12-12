@@ -1,4 +1,5 @@
 <?php
+//Code extracted from http://www.smarttutorials.net/ nothing changed here
 define('FIELDS_MISSING', 'Some Fields Are Missing');
 define('PASSWORD_NOT_MATCH', 'Passwords do not match');
 define('USER_REGISTRATION_FAIL', 'User registration failed');

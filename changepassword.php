@@ -1,5 +1,6 @@
 <?php require_once 'templates/header.php';?>
-<?php 
+<?php
+//Code extracted from http://www.smarttutorials.net/ and altered
     if( !empty( $_POST )){
         try {
             $user_obj = new Cl_User();

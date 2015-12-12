@@ -1,7 +1,7 @@
 <?php require_once 'templates/header.php';?>
 <!DOCTYPE html>
 <html lang="en">
-        <head>
+        <head> <!-- This part was left for Nuth to finish -->
             <title>Send Message</title>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">

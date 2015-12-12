@@ -22,6 +22,7 @@ $furnitures = simplexml_load_file('xml/furnitures.xml');
 //In line delete ends here
 ?>
 <?php
+//Code extracted from https://www.youtube.com/watch?v=z_m33GhTecA and altered
 if (isset($_POST['insert']))
 {
 	$xml = new DomDocument("1.0","UTF-8");

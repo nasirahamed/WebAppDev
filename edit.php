@@ -1,5 +1,7 @@
 <?php require_once 'templates/header.php';?>
 <?php
+//Code extracted and modified from https://www.youtube.com/watch?v=z_m33GhTecA
+//Code extracted and modified from https://www.youtube.com/watch?v=CBmB2fc0IUM
 require 'simplexml.class.php';
 $furnitures = simplexml_load_file('xml/furnitures.xml');
 if(isset($_POST['insert'])){

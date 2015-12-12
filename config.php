@@ -3,7 +3,7 @@
 @
 @
  */
-
+//Code extracted from http://www.smarttutorials.net/ and altered
 require_once 'messages.php';
 
 //site specific configuration declartion
