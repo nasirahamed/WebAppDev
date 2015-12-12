@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cusmessages>
+	<cusmessage>
+		<id>1</id>
+		<fullname>Adele</fullname>
+		<comment>Test comment</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>2</id>
+		<fullname>Chris</fullname>
+		<comment>Nice website, well navigation</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>3</id>
+		<fullname>Phuri</fullname>
+		<comment>test test test test</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>4</id>
+		<fullname>Mia</fullname>
+		<comment>Test Test Test Test</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>5</id>
+		<fullname>Maeji</fullname>
+		<comment>Working well to me</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>6</id>
+		<fullname>Lord Sugar</fullname>
+		<comment>tes ttest teest tessssssssssst</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>7</id>
+		<fullname>Jessica</fullname>
+		<comment>Im not Jessica, .. hahaha just testing the website</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>8</id>
+		<fullname>Daniel</fullname>
+		<comment>test test test test test test test test test test test test test test test test test test</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>9</id>
+		<fullname>Araya</fullname>
+		<comment>I'm a robot I'm a robot I'm a robot I'm a robot I'm a robot I'm a robot'</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>10</id>
+		<fullname>James</fullname>
+		<comment>Love this website</comment>
+	</cusmessage>
+	<cusmessage>
+		<id>11</id>
+		<fullname>Turbo</fullname>
+		<comment>first comment</comment>
+	</cusmessage>
+</cusmessages>

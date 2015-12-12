@@ -1,4 +1,37 @@
 <?php require_once 'templates/header.php';?>
+<?php
+if (isset($_POST['insert']))
+{
+    $xml = new DomDocument("1.0","UTF-8");
+    $xml->load('xml/cusmessages.xml');
+
+    $id = $_POST['id']; 
+    $fullname = $_POST['fullname']; 
+    $comment = $_POST['comment']; 
+    
+    $cusmessagesTag = $xml->getElementsByTagName("cusmessages")->item(0);
+
+    $cusmessageTag = $xml->createElement("cusmessage");
+    $idTag = $xml->createElement("id", $id);
+    $fullnameTag = $xml->createElement("fullname", $fullname);
+    $commentTag = $xml->createElement("comment", $comment);
+
+    //Append child element in cusmessage element
+    $cusmessageTag->appendChild($idTag);
+    $cusmessageTag->appendChild($fullnameTag);
+    $cusmessageTag->appendChild($commentTag);
+
+    //Appending all information tag inside root tag
+    $cusmessagesTag->appendChild($cusmessageTag);
+
+    $xml->save('xml/cusmessages.xml'); // to save data information into xml >cusmessages.xml
+}
+?>
+<?php //load the xml file content
+$get = file_get_contents('xml/cusmessages.xml');
+$arr = simplexml_load_string($get);
+$cusmessages = $arr->cusmessage;
+?>
 <!DOCTYPE html>
 <html lang="en">
         <head>
@@ -70,30 +103,81 @@
                 </div>
             </div>
             
-            <div class="col-md-6">
-                  <form role="form" onsubmit="return(login())">
-                    
+            <div class="col-md-9">
+                  <form class="from-horizontal" role="form" methos="POST" action="message.php">
+                  <p class="lead">Add Comment</p>  
                     <div class="form-group">
-                      <!-- <label for="First Name"></label> -->
-                      <input type="text" class="form-control" id="first" placeholder="First Name" required title="First Name cannot be empty">
+                      <label class="col-sm-2 control-label">ID#</label>
+                      <div class="col-sm-10">
+                      <input class="form-control" type="text" name="id" placeholder="Enter ID" required title="Please enter ID">
+                      </div>
                     </div>
                     
                     <div class="form-group">
-                      <!-- <label for="Last Name"></label> -->
-                      <input type="text" class="form-control" id="last" placeholder="Last Name" required title="Last Name cannot be empty">
+                      <label class="col-sm-2 control-label">Full Name</label>
+                      <div class="col-sm-10">
+                      <input class="form-control" type="text" name="fullname" placeholder="Full Name" required title="Please enter your full name here">
+                      </div>
                     </div>  
                     <div class="form-group">
-                        <!-- <label for="Your Message"></label> -->
-                        <textarea class="form-control" rows="8" id="comment" placeholder="Your Message" required title="Message cannot be empty"></textarea>
+                        <label class="col-sm-2 control-label">Your Message</label>
+                        <textarea class="form-control" rows="8" name="comment" placeholder="Your Message" required title="Please enter your message here"></textarea>
+                  </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-sm-10">
+                    <button type="submit" id="success" class="btn btn-success" name="insert">Send <span class="glyphicon glyphicon-send"></span></button>
+                            </div>
                     </div>
-                    
-                    <button type = "submit" class="btn btn-primary" name="insert">Send
-                    <span class="glyphicon glyphicon-send"></span>
-                    </button>
+                  
                   </form>
-            </div>
+    <br />
+    
+    <div class="row">
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID#</th>
+                                    <th>Name</th>
+                                    <th>Comment</th>
+
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <?php foreach($cusmessages as $row) {
+                                    ?>
+                                        <tr>
+                                            <td><?php echo $row->id ?></td>
+                                            <td><?php echo $row->fullname ?></td>
+                                            <td><?php echo $row->comment ?></td>
+                                            
+                                            <td style="width: 25px; text-align: center;">
+                                                <a href="<<php page>>>?id=<?php echo $row->id; ?>">
+                                                <button class="btn btn-primary btn-xs">
+                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                </button>
+                                                </a>
+                                            </td>
+                                            
+                                            <td style="width: 25px; text-align: center;">
+                                                <a href="message.php?action=delete&id=<?php echo $row->id; ?>" onclick="return confirm('Are you sure, you want to delete it?')">
+                                                <button class="btn btn-danger btn-xs" style="color: #fff; background-color: #d9534f; border-color: #d43f3a;">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>
+                            </tbody>
+                    </table>
+                </div>
         </div>
     </div>
+</div> <!-- end container -->
     <!-- /.container -->
     <div class="container">
         <hr>
