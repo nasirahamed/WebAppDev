@@ -43,25 +43,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Inventory Management System</a>
+                <a class="navbar-brand" href="home.php"><span class="glyphicon glyphicon-home"></span> IMS</a>
+                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="account.php">My Account</a>
-                    </li>
-                    
-                    <li>
-                        <a href="changepassword.php">Change Password</a>
-                    </li>
-                    
-                    <li>
-                        <a href="message.php">Send Message</a>
-                    </li>
-                    
-                    <li>
-                        <a href="logout.php">Sign out</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="message.php">Message</a></li>
+                        <!-- <li><a href="#">Another Link</a></li> -->
+                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="account.php">My Account</a></li>
+                                <li><a href="changepassword.php">Change Password</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="logout.php">Sign out</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
