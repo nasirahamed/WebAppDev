@@ -6,7 +6,7 @@
 			<channel>
 				<atom:link href="https://webappdev-nasirahamed-1.c9users.io/rss/rss.xml" rel="self" type="application/rss+xml" />
 				<title>Inventory Management System</title>
-				<link>https://webappdev-nasirahamed-1.c9users.io/home.php</link>
+				<link>../home.php</link>
 				<description>The latest Furniture information from IMS!</description>
 				<language>en-us</language>
 				<copyright>Copyright 2016 Inventory Management System</copyright>
