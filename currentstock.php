@@ -24,7 +24,7 @@ $furnitures = $arr->furniture;
             <script src="js/jquery.js"></script>
             <script src="js/bootstrap.min.js"></script>
         </head>
-<body>
+<body oncontextmenu="return false">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">

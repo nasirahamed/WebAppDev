@@ -41,7 +41,7 @@ require_once 'config.php';
 	<script src="js/bootstrap.min.js"></script>
 	<script src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
   </head>
-  <body oncopy="return false;" onpaste="return false;" oncut="return false;">
+  <body oncopy="return false;" onpaste="return false;" oncut="return false;" oncontextmenu="return false;">
 	<div class="container">
 
 		<div class="login-form">

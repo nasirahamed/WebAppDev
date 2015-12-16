@@ -18,7 +18,7 @@
                 <script type="text/javascript" src="js/search.js"></script> <!-- Ajax Search -->
                 <style type="text/css" src="css/search.css"></style> <!-- Search Form Style Sheet -->
             </head>
-<body>
+<body oncontextmenu="return false;">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">

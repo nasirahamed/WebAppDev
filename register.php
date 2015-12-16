@@ -37,7 +37,7 @@ require_once 'config.php';
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body oncontextmenu="return false">
 	<div class="container">
 
 		<div class="login-form">

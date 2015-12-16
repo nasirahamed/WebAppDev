@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <furnitures>
     <furniture>
         <id>1001</id>
@@ -7,13 +7,7 @@
         <color>Wooden</color>
         <price>69</price>
     </furniture>
-    <furniture>
-        <id>1002</id>
-        <name>Aratica XL</name>
-        <type>Small Chair</type>
-        <color>Silver</color>
-        <price>75</price>
-    </furniture>
+    
     <furniture>
         <id>1003</id>
         <name>Aresol SM</name>
@@ -21,13 +15,7 @@
         <color>Green</color>
         <price>99</price>
     </furniture>
-    <furniture>
-        <id>1004</id>
-        <name>Aralito</name>
-        <type>Bed</type>
-        <color>Wooden Light</color>
-        <price>250</price>
-    </furniture>
+    
     <furniture>
         <id>1005</id>
         <name>Aralota</name>

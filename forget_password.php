@@ -28,7 +28,7 @@ require_once 'config.php';
     <link href="css/login.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body oncontextmenu="return false">
 	<div class="container">
 
 		<div class="login-form">
