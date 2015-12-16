@@ -104,15 +104,13 @@
     </div>
 <div class="container"> <!-- start footer container -->
 	<hr>
-<footer> <!-- Footer Started -->
-	<div class="row">
+	<div class="row"><!-- Footer Started -->
 		<div class="col-lg-12">
 		    <p><img src="img/ims_logo.jpg"></p>
 			<p>Copyright &copy; Inventory Management System 2016</p>
 			<p>designed by <strong>Nasir</strong> & <strong>Nuth</strong></p>
 		</div>
-	</div>
-</footer>
-</div> <!-- end of footer container -->
+	</div><!-- end of footer container -->
+</div> 
 </body>
 </html>
